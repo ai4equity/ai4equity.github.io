@@ -36,14 +36,16 @@ export default function Hero() {
           studying educational equity, technology use, generative AI, and
           student interaction patterns.
           <br />
-          My work connects implementation, learner autonomy, motivation, and
-          learning outcomes.
+          My work connects learner autonomy, motivation, and learning process
+          and outcomes in technology-mediated learning environments.
         </p>
 
         <div className="hero-chips">
-          <span className="hero-chip">Educational Chatbots</span>
-          <span className="hero-chip">Educational Equity</span>
-          <span className="hero-chip">Generative AI in Learning</span>
+          <span className="hero-chip">AIED</span>
+          <span className="hero-chip">AI</span>
+          <span className="hero-chip">Learning Analytics</span>
+          <span className="hero-chip">Problem/Game-Based Learning</span>
+          <span className="hero-chip">STEM Education</span>
         </div>
 
         <div className="hero-cta">

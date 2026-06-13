@@ -44,9 +44,11 @@ describe('Hero', () => {
   it('displays hero chips for credentials', () => {
     render(<Hero />);
 
-    expect(screen.getByText('Educational Chatbots')).toBeInTheDocument();
-    expect(screen.getByText('Educational Equity')).toBeInTheDocument();
-    expect(screen.getByText('Generative AI in Learning')).toBeInTheDocument();
+    expect(screen.getByText('AIED')).toBeInTheDocument();
+    expect(screen.getByText('AI')).toBeInTheDocument();
+    expect(screen.getByText('Learning Analytics')).toBeInTheDocument();
+    expect(screen.getByText('Problem/Game-Based Learning')).toBeInTheDocument();
+    expect(screen.getByText('STEM Education')).toBeInTheDocument();
   });
 
   it('renders CTA buttons with correct links', () => {

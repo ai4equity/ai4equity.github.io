@@ -13,11 +13,20 @@ describe('ContactIcons', () => {
       'href',
       'https://www.linkedin.com/in/songhee-han/',
     );
+
+    const scholarLink = screen.getByRole('link', {
+      name: /google scholar/i,
+    });
+    expect(scholarLink).toBeInTheDocument();
+    expect(scholarLink).toHaveAttribute(
+      'href',
+      'https://scholar.google.com/citations?user=nbDDsAsAAAAJ&hl=en',
+    );
   });
 
-  it('only renders LinkedIn as the social link', () => {
+  it('only renders LinkedIn and Google Scholar as social links', () => {
     render(<ContactIcons />);
     const links = screen.getAllByRole('link');
-    expect(links.length).toBe(1);
+    expect(links.length).toBe(2);
   });
 });
