@@ -46,6 +46,10 @@ describe('Footer', () => {
       'href',
       '/projects',
     );
+    expect(screen.getByRole('link', { name: /lab members/i })).toHaveAttribute(
+      'href',
+      '/lab-members',
+    );
     expect(screen.getByRole('link', { name: /publications/i })).toHaveAttribute(
       'href',
       '/writing',

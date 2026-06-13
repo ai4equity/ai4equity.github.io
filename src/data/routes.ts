@@ -30,6 +30,10 @@ const routes: Route[] = [
     label: 'Grants',
     path: '/projects',
   },
+  {
+    label: 'AI4Equity Lab Members',
+    path: '/lab-members',
+  },
 ];
 
 export default routes;

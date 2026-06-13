@@ -11,9 +11,19 @@ export interface Project {
 
 const data: Project[] = [
   {
+    title: 'Bridging the AI Adoption Gap',
+    subtitle:
+      'Anne Spencer Daves College of Education, Health, and Human Sciences',
+    image: '/images/projects/generative-ai-math-instruction.jpg',
+    date: '2025-12-01',
+    desc: 'Teacher-led design and implementation of generative AI-supported mathematics instruction. Funded by Anne Spencer Daves College of Education, Health, and Human Sciences, Florida State University. Total award $25,213.59.',
+    tech: ['Generative AI', 'Mathematics Instruction', 'Teacher-Led Design'],
+    featured: true,
+  },
+  {
     title: 'Advancing Equity in Online Learning',
     subtitle: 'First Year Assistant Professor Grant',
-    image: '/images/me.jpg',
+    image: '/images/projects/equity-online-learning.jpg',
     date: '2025-06-01',
     desc: 'Examination of an open-source chatbot enhanced by customized datasets and open educational resources. Funded by Florida State University. Total award $20,000.',
     tech: ['Educational Chatbots', 'Open Educational Resources', 'Equity'],
@@ -22,7 +32,7 @@ const data: Project[] = [
   {
     title: 'RAG Chatbot and Dashboard Pipelines',
     subtitle: 'FSU / AWS Funding for Computer Support Seed Fund',
-    image: '/images/me.jpg',
+    image: '/images/projects/rag-dashboard-pipelines.jpg',
     date: '2025-04-01',
     desc: "Large language model-powered retrieval-augmented generation chatbot and dashboard pipelines for students' academic success. Total award $20,000.",
     tech: ['Large Language Models', 'RAG', 'Dashboards'],
@@ -32,7 +42,7 @@ const data: Project[] = [
     title: 'Launching AI4Equity Lab',
     subtitle:
       'Anne Spencer Daves College of Education, Health, and Human Sciences',
-    image: '/images/me.jpg',
+    image: '/images/projects/ai4equity-lab.jpg',
     date: '2024-08-01',
     desc: 'Funded support for launching AI4Equity Lab at Florida State University. Total award $9,950.',
     tech: ['AI4Equity', 'Learning Technologies', 'Online Learning'],

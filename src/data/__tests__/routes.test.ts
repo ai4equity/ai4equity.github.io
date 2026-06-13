@@ -41,6 +41,7 @@ describe('routes', () => {
     expect(paths).toContain('/resume');
     expect(paths).toContain('/writing');
     expect(paths).toContain('/projects');
+    expect(paths).toContain('/lab-members');
     expect(paths).toContain('/contact');
     expect(paths).not.toContain('/stats');
   });

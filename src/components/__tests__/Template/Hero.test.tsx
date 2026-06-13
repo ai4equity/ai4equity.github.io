@@ -15,7 +15,7 @@ describe('Hero', () => {
     render(<Hero />);
 
     const heading = screen.getByRole('heading', { level: 1 });
-    expect(heading).toHaveTextContent('Songhee Han');
+    expect(heading).toHaveTextContent('Songhee Han, PhD');
   });
 
   it('renders the tagline with FSU and program links', () => {
