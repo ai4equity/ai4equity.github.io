@@ -33,6 +33,7 @@ My research also extends to motivation, learning analytics, and problem-based le
 
 # Funded Work
 
+- Bridging the AI Adoption Gap: Teacher-Led Design and Implementation of Generative AI-Supported Mathematics Instruction, Anne Spencer Daves College of Education, Health, and Human Sciences, Florida State University, Dec 2025-Mar 2027. Total award $25,213.59.
 - Advancing Equity in Online Learning: Examination of an Open-Source Chatbot Enhanced by Customized Datasets and Open Educational Resources, First Year Assistant Professor Grant, Florida State University, 2025.
 - Large Language Model-Powered Retrieval-Augmented Generation Chatbot and Dashboard Pipelines: Scalable Solutions for Students' Academic Success, FSU / AWS Funding for Computer Support Seed Fund, 2025-2027.
 - Launching AI4Equity Lab, Anne Spencer Daves College of Education, Health, and Human Sciences, Florida State University, 2024-2025.
