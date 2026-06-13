@@ -6,7 +6,7 @@ const data: Project[] = [
     subtitle: 'Director, AI4Equity Lab',
     visualTone: 'teal',
     date: '2024-08-01',
-    desc: 'Educational researcher and data scientist studying educational equity, technology use, generative AI, educational chatbots, learning analytics, and student interaction patterns.',
+    desc: 'Educational researcher and data scientist studying educational equity, generative AI, learning analytics, and student interaction patterns.',
     tech: [
       'Educational Equity',
       'Technology Use',
