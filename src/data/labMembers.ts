@@ -5,7 +5,7 @@ const data: Project[] = [
     title: 'Songhee Han, PhD',
     subtitle: 'Director, AI4Equity Lab',
     visualTone: 'teal',
-    date: '2024-08-01',
+    date: 'Since 2024-08-01',
     desc: '',
     tech: [
       'Educational Equity',
