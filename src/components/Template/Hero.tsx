@@ -19,11 +19,18 @@ export default function Hero() {
           <a
             href="https://annescollege.fsu.edu/instructional-systems-and-learning-technologies"
             className="hero-highlight"
+            target="_blank"
+            rel="noopener noreferrer"
           >
             Instructional Systems &amp; Learning Technologies
           </a>{' '}
           at{' '}
-          <a href="https://www.fsu.edu/" className="hero-highlight">
+          <a
+            href="https://www.fsu.edu/"
+            className="hero-highlight"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             Florida State University
           </a>{' '}
           studying educational equity, technology use, generative AI, and

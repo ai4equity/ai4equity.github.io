@@ -28,12 +28,16 @@ describe('Hero', () => {
       'href',
       'https://annescollege.fsu.edu/instructional-systems-and-learning-technologies',
     );
+    expect(programLink).toHaveAttribute('target', '_blank');
+    expect(programLink).toHaveAttribute('rel', 'noopener noreferrer');
     expect(programLink).toHaveClass('hero-highlight');
 
     const fsuLink = screen.getByRole('link', {
       name: /florida state university/i,
     });
     expect(fsuLink).toHaveAttribute('href', 'https://www.fsu.edu/');
+    expect(fsuLink).toHaveAttribute('target', '_blank');
+    expect(fsuLink).toHaveAttribute('rel', 'noopener noreferrer');
     expect(fsuLink).toHaveClass('hero-highlight');
   });
 
