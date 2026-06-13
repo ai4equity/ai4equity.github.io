@@ -15,29 +15,31 @@ describe('Hero', () => {
     render(<Hero />);
 
     const heading = screen.getByRole('heading', { level: 1 });
-    expect(heading).toHaveTextContent("Michael D'Angelo");
+    expect(heading).toHaveTextContent('Songhee Han');
   });
 
-  it('renders the tagline with OpenAI and promptfoo links', () => {
+  it('renders the tagline with FSU and program links', () => {
     render(<Hero />);
 
-    const openAiLink = screen.getByRole('link', { name: /openai/i });
-    expect(openAiLink).toHaveAttribute('href', 'https://openai.com');
-    expect(openAiLink).toHaveClass('hero-highlight');
+    const programLink = screen.getByRole('link', {
+      name: /instructional systems/i,
+    });
+    expect(programLink).toHaveAttribute('href', 'https://education.fsu.edu/');
+    expect(programLink).toHaveClass('hero-highlight');
 
-    const promptfooLink = screen.getByRole('link', { name: /promptfoo/i });
-    expect(promptfooLink).toHaveAttribute('href', 'https://promptfoo.dev');
-    expect(promptfooLink).toHaveClass('hero-highlight');
+    const fsuLink = screen.getByRole('link', {
+      name: /florida state university/i,
+    });
+    expect(fsuLink).toHaveAttribute('href', 'https://www.fsu.edu/');
+    expect(fsuLink).toHaveClass('hero-highlight');
   });
 
   it('displays hero chips for credentials', () => {
     render(<Hero />);
 
-    expect(screen.getByText('YC Alum')).toBeInTheDocument();
-    expect(screen.getByText('Stanford ICME')).toBeInTheDocument();
-    expect(
-      screen.getByText('Co-founded Arthena & Matroid'),
-    ).toBeInTheDocument();
+    expect(screen.getByText('Educational Chatbots')).toBeInTheDocument();
+    expect(screen.getByText('Educational Equity')).toBeInTheDocument();
+    expect(screen.getByText('Generative AI in Learning')).toBeInTheDocument();
   });
 
   it('renders CTA buttons with correct links', () => {

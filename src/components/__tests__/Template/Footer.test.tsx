@@ -14,9 +14,11 @@ describe('Footer', () => {
   it('displays the name and role', () => {
     render(<Footer />);
 
-    expect(screen.getByText("Michael D'Angelo")).toBeInTheDocument();
+    expect(screen.getByText('Songhee Han')).toBeInTheDocument();
     expect(
-      screen.getByText('Member of the Technical Staff at OpenAI'),
+      screen.getByText(
+        'Faculty, Instructional Systems & Learning Technologies at Florida State University',
+      ),
     ).toBeInTheDocument();
   });
 
@@ -40,9 +42,13 @@ describe('Footer', () => {
       'href',
       '/resume',
     );
-    expect(screen.getByRole('link', { name: /projects/i })).toHaveAttribute(
+    expect(screen.getByRole('link', { name: /grants/i })).toHaveAttribute(
       'href',
       '/projects',
+    );
+    expect(screen.getByRole('link', { name: /publications/i })).toHaveAttribute(
+      'href',
+      '/writing',
     );
     expect(screen.getByRole('link', { name: /contact/i })).toHaveAttribute(
       'href',

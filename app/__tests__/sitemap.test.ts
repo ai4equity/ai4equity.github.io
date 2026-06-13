@@ -13,13 +13,12 @@ describe('sitemap', () => {
         expect.objectContaining({ url: `${SITE_URL}/resume/` }),
         expect.objectContaining({ url: `${SITE_URL}/projects/` }),
         expect.objectContaining({ url: `${SITE_URL}/writing/` }),
-        expect.objectContaining({ url: `${SITE_URL}/stats/` }),
         expect.objectContaining({ url: `${SITE_URL}/contact/` }),
       ]),
     );
   });
 
-  it('uses trailing slashes for post routes', () => {
+  it('does not include internal post routes when publications are external', () => {
     const entries = sitemap();
     const postEntries = entries.filter(
       (entry) =>
@@ -27,7 +26,6 @@ describe('sitemap', () => {
         entry.url !== `${SITE_URL}/writing/`,
     );
 
-    expect(postEntries.length).toBeGreaterThan(0);
-    expect(postEntries.every((entry) => entry.url.endsWith('/'))).toBe(true);
+    expect(postEntries.length).toBe(0);
   });
 });

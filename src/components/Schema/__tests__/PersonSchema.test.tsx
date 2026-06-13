@@ -72,7 +72,7 @@ describe('PersonSchema', () => {
 
     expect(data.worksFor).toBeDefined();
     expect(data.worksFor['@type']).toBe('Organization');
-    expect(data.worksFor.name).toBe('OpenAI');
+    expect(data.worksFor.name).toBe('Florida State University');
   });
 
   it('uses current role as job title', () => {
@@ -83,7 +83,9 @@ describe('PersonSchema', () => {
     );
     const data = JSON.parse(script?.innerHTML || '{}');
 
-    expect(data.jobTitle).toBe('Member of the Technical Staff');
+    expect(data.jobTitle).toBe(
+      'Faculty, Instructional Systems & Learning Technologies',
+    );
   });
 
   it('includes alumniOf schools', () => {

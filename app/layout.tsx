@@ -1,5 +1,4 @@
 import type { Metadata } from 'next';
-import { Raleway, Source_Sans_3 } from 'next/font/google';
 import Script from 'next/script';
 
 import GoogleAnalytics from '@/components/Template/GoogleAnalytics';
@@ -8,26 +7,8 @@ import ScrollToTop from '@/components/Template/ScrollToTop';
 import { AUTHOR_NAME, SITE_URL, TWITTER_HANDLE } from '@/lib/utils';
 import './tailwind.css';
 
-const sourceSans = Source_Sans_3({
-  weight: ['400', '700'],
-  subsets: ['latin'],
-  variable: '--font-source-sans',
-  display: 'swap',
-  preload: true,
-  adjustFontFallback: true,
-});
-
-const raleway = Raleway({
-  weight: ['400', '800'],
-  subsets: ['latin'],
-  variable: '--font-raleway',
-  display: 'swap',
-  preload: true,
-  adjustFontFallback: true,
-});
-
 const siteDescription =
-  'Member of the Technical Staff at OpenAI, working on Promptfoo and agent security. Previously co-founded Promptfoo, Arthena, and Matroid, and led engineering at Smile ID.';
+  'Songhee Han is an educational researcher and data scientist studying educational equity, technology use, generative AI, and student interaction patterns.';
 
 export const metadata: Metadata = {
   title: {
@@ -37,13 +18,17 @@ export const metadata: Metadata = {
   description: siteDescription,
   keywords: [
     AUTHOR_NAME,
-    'OpenAI',
-    'Promptfoo',
-    'agent security',
-    'LLM security',
-    'machine learning',
-    'startup founder',
-    'YC',
+    'AI in education',
+    'educational equity',
+    'technology use',
+    'generative AI',
+    'learning analytics',
+    'educational chatbots',
+    'educational data science',
+    'learning technologies',
+    'online learning',
+    'equity',
+    'Florida State University',
   ],
   authors: [{ name: AUTHOR_NAME }],
   creator: AUTHOR_NAME,
@@ -91,11 +76,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html
-      lang="en"
-      className={`${sourceSans.variable} ${raleway.variable}`}
-      suppressHydrationWarning
-    >
+    <html lang="en" suppressHydrationWarning>
       <head>
         {/* CSP-safe theme initialization - prevents flash on load */}
         <Script id="theme-init" strategy="beforeInteractive">

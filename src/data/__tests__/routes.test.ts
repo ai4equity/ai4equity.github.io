@@ -39,8 +39,10 @@ describe('routes', () => {
     expect(paths).toContain('/');
     expect(paths).toContain('/about');
     expect(paths).toContain('/resume');
+    expect(paths).toContain('/writing');
     expect(paths).toContain('/projects');
     expect(paths).toContain('/contact');
+    expect(paths).not.toContain('/stats');
   });
 
   it('has unique paths', () => {

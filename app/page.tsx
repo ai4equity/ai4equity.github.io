@@ -6,7 +6,7 @@ import PageWrapper from '@/components/Template/PageWrapper';
 
 export const metadata: Metadata = {
   description:
-    'Member of the Technical Staff at OpenAI, working on Promptfoo and agent security. Previously co-founded Promptfoo, Arthena, and Matroid, and led engineering at Smile ID.',
+    'Songhee Han is an educational researcher and data scientist studying educational equity, technology use, generative AI, and student interaction patterns.',
 };
 
 export default function HomePage() {

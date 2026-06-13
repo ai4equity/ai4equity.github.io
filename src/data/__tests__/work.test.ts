@@ -71,12 +71,11 @@ describe('work data', () => {
     }
   });
 
-  it('has positions from different years', () => {
-    const years = work.map((job) => new Date(job.startDate).getFullYear());
-    const uniqueYears = new Set(years);
-
-    // Resume should contain work from multiple years
-    expect(uniqueYears.size).toBeGreaterThan(1);
+  it('has a CV-backed current academic position', () => {
+    expect(work[0].name).toBe('Florida State University');
+    expect(work[0].position).toContain(
+      'Instructional Systems & Learning Technologies',
+    );
   });
 
   it('company names are non-empty', () => {

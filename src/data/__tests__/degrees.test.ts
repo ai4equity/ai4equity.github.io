@@ -45,11 +45,11 @@ describe('degrees data', () => {
     }
   });
 
-  it('has unique school entries', () => {
-    const schools = degrees.map((d) => d.school);
-    const uniqueSchools = new Set(schools);
+  it('has unique degree entries', () => {
+    const degreeEntries = degrees.map((d) => `${d.school}-${d.degree}`);
+    const uniqueDegreeEntries = new Set(degreeEntries);
 
-    expect(uniqueSchools.size).toBe(schools.length);
+    expect(uniqueDegreeEntries.size).toBe(degreeEntries.length);
   });
 
   it('each degree has a non-empty degree name', () => {

@@ -6,9 +6,8 @@ import data from '@/data/projects';
 import { createPageMetadata } from '@/lib/metadata';
 
 export const metadata: Metadata = createPageMetadata({
-  title: 'Archive',
-  description:
-    "Early projects and experiments from Michael D'Angelo (2015 and earlier).",
+  title: 'Grants',
+  description: "Funded projects and grants listed in Songhee Han's CV.",
   path: '/projects/',
 });
 
@@ -20,15 +19,15 @@ export default function ProjectsPage() {
     <PageWrapper>
       <section className="projects-page">
         <header className="projects-header">
-          <h1 className="page-title">Archive</h1>
+          <h1 className="page-title">Grants</h1>
           <p className="page-subtitle">
-            Early projects and experiments from my student years
+            Funded projects and research initiatives
           </p>
         </header>
 
         {featuredProjects.length > 0 && (
           <section className="projects-featured">
-            <h2 className="projects-section-title">Hackathons &amp; Awards</h2>
+            <h2 className="projects-section-title">Funded Projects</h2>
             <div className="projects-grid projects-grid--featured">
               {featuredProjects.map((project) => (
                 <Cell data={project} key={project.title} />
@@ -39,7 +38,7 @@ export default function ProjectsPage() {
 
         {otherProjects.length > 0 && (
           <section className="projects-other">
-            <h2 className="projects-section-title">Side Projects</h2>
+            <h2 className="projects-section-title">Additional Support</h2>
             <div className="projects-grid">
               {otherProjects.map((project) => (
                 <Cell data={project} key={project.title} />

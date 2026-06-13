@@ -8,104 +8,58 @@ export interface WritingItem {
 const data: WritingItem[] = [
   {
     title:
-      "McKinsey's Lilli Looks More Like an API Security Failure Than a Model Jailbreak",
-    url: 'https://www.promptfoo.dev/blog/mckinsey-lilli-appsec-vs-ai-jailbreak/',
-    date: '2026-03-10',
+      "Learner autonomy and mode selection in dual-mode chatbot: Students' interaction patterns and learning outcomes in an online course",
+    url: 'https://doi.org/10.1016/j.compedu.2025.105464',
+    date: '2025-09-01',
     description:
-      'Why the reported Lilli incident looks like an application-security chain reaching an AI system, not a model jailbreak.',
-  },
-  {
-    title: 'Promptfoo is joining OpenAI',
-    url: 'https://www.linkedin.com/posts/michaelldangelo_today-were-announcing-that-promptfoo-will-share-7436818429187088386-_hpH',
-    date: '2026-03-09',
-    description:
-      'Announcing that Promptfoo has agreed to be acquired by OpenAI.',
-  },
-  {
-    title: 'How AI Regulation Changed in 2025',
-    url: 'https://www.promptfoo.dev/blog/ai-regulation-2025/',
-    date: '2025-12-15',
-    description:
-      'Why "AI compliance questions" appeared in security questionnaires and RFPs, and how policy becomes contract requirements.',
+      'Computers & Education, Article 105464. Study of learner autonomy, chatbot mode selection, interaction patterns, and learning outcomes.',
   },
   {
     title:
-      "Why Attack Success Rate (ASR) Isn't Comparable Across Jailbreak Papers",
-    url: 'https://www.promptfoo.dev/blog/asr-not-portable-metric/',
-    date: '2025-12-12',
+      "Need for cognition's impact in science PBL: Assessing motivation and learning outcomes among diverse middle school students",
+    url: 'https://doi.org/10.1007/s11251-025-09731-w',
+    date: '2025-01-01',
     description:
-      "ASR isn't portable across papers because measurement choices dominate the headline number. Includes math and a checklist for reading papers.",
-  },
-  {
-    title: 'GPT-5.2 Initial Trust and Safety Assessment',
-    url: 'https://www.promptfoo.dev/blog/gpt-5.2-trust-safety-assessment/',
-    date: '2025-12-11',
-    description:
-      'Day-zero red team of GPT-5.2 focusing on jailbreak resilience and harmful content.',
-  },
-  {
-    title: 'Real-Time Fact Checking for LLM Outputs',
-    url: 'https://www.promptfoo.dev/blog/llm-search-rubric-assertions/',
-    date: '2025-11-28',
-    description:
-      'Introduces search-rubric, an assertion where a search-enabled judge verifies time-sensitive claims during evals and CI.',
+      'Instructional Science, 53, 1139-1158. Research on motivation and learning outcomes in science problem-based learning.',
   },
   {
     title:
-      'When AI becomes the attacker: The rise of AI-orchestrated cyberattacks',
-    url: 'https://www.promptfoo.dev/blog/anthropic-threat-intelligence-vibe-hacking/',
-    date: '2025-11-10',
+      'Understanding sentiments toward an educational chatbot in MOOCs: Neutral interactions, diverse reflections, and key predictive factors',
+    url: 'https://doi.org/10.1007/s10758-025-09902-1',
+    date: '2025-01-01',
     description:
-      'Connects malware querying LLMs at runtime with "vibe hacking" case studies. Defense needs continuous testing.',
+      'Technology, Knowledge and Learning. Study of sentiments toward educational chatbot use in MOOCs.',
   },
   {
     title:
-      'Reinforcement Learning with Verifiable Rewards Makes Models Faster, Not Smarter',
-    url: 'https://www.promptfoo.dev/blog/rlvr-explained/',
-    date: '2025-10-24',
+      'Equity at the forefront: A systematic research and development process of chatbot curriculum for massive open online courses',
+    url: 'https://doi.org/10.30191/ETS.202410_27(4).SP08',
+    date: '2024-01-01',
     description:
-      'RLVR gains are often "search compression" rather than new reasoning ability.',
+      'Educational Technology & Society, 27(4), 339-351. Research and development process for chatbot curriculum in MOOCs.',
   },
   {
-    title: "Prompt Injection vs Jailbreaking: What's the Difference?",
-    url: 'https://www.promptfoo.dev/blog/jailbreaking-vs-prompt-injection/',
-    date: '2025-08-18',
+    title:
+      "Knowledge-based chatbots: A scale measuring students' learning experiences in massive open online courses",
+    url: 'https://doi.org/10.1007/s11423-023-10280-7',
+    date: '2023-01-01',
     description:
-      'Jailbreaking targets model safety training; prompt injection targets application trust boundaries.',
+      "Educational Technology Research and Development. Scale development for students' learning experiences with knowledge-based chatbots.",
   },
   {
-    title: 'AI Safety vs AI Security in LLM Applications: What Teams Must Know',
-    url: 'https://www.promptfoo.dev/blog/ai-safety-vs-security/',
-    date: '2025-08-17',
+    title: 'FAQ chatbot and inclusive learning in massive open online courses',
+    url: 'https://doi.org/10.1016/j.compedu.2021.104395',
+    date: '2022-01-01',
     description:
-      'Safety protects people from harmful outputs; security protects systems from adversarial manipulation.',
+      'Computers & Education, 179, Article 104395. Study of FAQ chatbots and inclusive learning in MOOCs.',
   },
   {
-    title: 'Promptfoo Raises $18.4M Series A',
-    url: 'https://www.promptfoo.dev/blog/series-a-announcement/',
-    date: '2025-07-29',
+    title:
+      "Making FAQ chatbots more Inclusive: An examination of non-native English users' interactions with new technology in massive open online courses",
+    url: 'https://doi.org/10.1007/s40593-022-00311-4',
+    date: '2022-01-01',
     description:
-      'Announcing our Series A led by Insight Partners with participation from a16z.',
-  },
-  {
-    title: 'Evaluating political bias in LLMs',
-    url: 'https://www.promptfoo.dev/blog/grok-4-political-bias/',
-    date: '2025-07-24',
-    description:
-      'Open methodology and dataset (2,500 political statements) to measure political leaning in models.',
-  },
-  {
-    title: 'Celebrating 100,000 Users',
-    url: 'https://www.promptfoo.dev/blog/100k-users/',
-    date: '2025-06-10',
-    description:
-      "Promptfoo's journey from prompt evaluation to AI red teaming, marking 100,000 users.",
-  },
-  {
-    title: "Testing Humanity's Last Exam with Promptfoo",
-    url: 'https://www.promptfoo.dev/docs/guides/hle-benchmark/',
-    date: '',
-    description: 'Guide on using Promptfoo to test the HLE benchmark.',
+      'International Journal of Artificial Intelligence in Education. Study of non-native English users and inclusive chatbot interaction.',
   },
 ];
 

@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   ...createPageMetadata({
     title: 'Writing',
     description:
-      'Articles on AI security, LLM red teaming, and trust & safety.',
+      'Selected publications by Songhee Han on AI in education, learning analytics, MOOCs, and educational chatbots.',
     path: '/writing/',
   }),
   alternates: {
@@ -101,12 +101,12 @@ export default function WritingPage() {
       <article className="writing-page">
         <header className="writing-header">
           <div className="writing-header-row">
-            <h1 className="page-title">Writing</h1>
+            <h1 className="page-title">Publications</h1>
             <a
               href="/feed.xml"
               className="writing-rss-link"
-              title="RSS Feed"
-              aria-label="RSS Feed"
+              title="Publications RSS Feed"
+              aria-label="Publications RSS Feed"
             >
               RSS
             </a>
