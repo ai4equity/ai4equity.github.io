@@ -9,8 +9,8 @@ const data: Project[] = [
     desc: 'Educational researcher and data scientist studying educational equity, generative AI, learning analytics, and student interaction patterns.',
     tech: [
       'Educational Equity',
-      'Technology Use',
       'Generative AI',
+      'STEM Education',
       'Learning Analytics',
     ],
     featured: true,
