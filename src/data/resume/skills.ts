@@ -68,12 +68,7 @@ const skills: Skill[] = [
     category: ['Methods'],
   },
   {
-    title: 'Instructional Design',
-    competency: 4,
-    category: ['Instructional Design'],
-  },
-  {
-    title: 'Curriculum and Instruction',
+    title: 'Training Curriculum and Instruction',
     competency: 4,
     category: ['Instructional Design'],
   },
