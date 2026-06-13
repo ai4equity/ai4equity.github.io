@@ -9,22 +9,47 @@ interface CellProps {
 }
 
 export default function Cell({ data }: CellProps) {
-  const { title, subtitle, link, image, date, desc, tech, featured } = data;
+  const {
+    title,
+    subtitle,
+    link,
+    image,
+    visualTone,
+    date,
+    desc,
+    tech,
+    featured,
+  } = data;
 
   const hasLink = Boolean(link);
 
   const cardContent = (
     <>
-      <div className="project-card-image">
-        <Image
-          src={image}
-          alt={title}
-          width={PROJECT_IMAGE.width}
-          height={PROJECT_IMAGE.height}
-          sizes="(max-width: 600px) 100vw, 50vw"
-        />
-        <div className="project-card-overlay" />
-      </div>
+      {image ? (
+        <div className="project-card-image">
+          <Image
+            src={image}
+            alt={title}
+            width={PROJECT_IMAGE.width}
+            height={PROJECT_IMAGE.height}
+            sizes="(max-width: 600px) 100vw, 50vw"
+          />
+          <div className="project-card-overlay" />
+        </div>
+      ) : (
+        <div
+          className={`project-card-visual project-card-visual--${visualTone ?? 'teal'}`}
+          aria-hidden="true"
+        >
+          <span className="project-card-visual-mark">
+            {title
+              .split(' ')
+              .map((word) => word[0])
+              .join('')
+              .slice(0, 2)}
+          </span>
+        </div>
+      )}
 
       <div className="project-card-content">
         <header className="project-card-header">

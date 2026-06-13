@@ -20,22 +20,14 @@
   gap: 1rem;
 }
 
-.writing-rss-link {
-  font-size: var(--text-sm);
-  font-weight: var(--font-weight-medium);
-  color: var(--color-fg-light);
+.writing-intro a {
+  color: var(--color-accent);
+  font-weight: var(--font-weight-semibold);
   text-decoration: none;
-  padding: 0.25rem 0.5rem;
-  border: 1px solid var(--color-border);
-  border-radius: var(--radius-xs);
-  transition:
-    color var(--duration-instant) var(--ease-out),
-    border-color var(--duration-instant) var(--ease-out);
 }
 
-.writing-rss-link:hover {
-  color: var(--color-accent);
-  border-color: var(--color-accent);
+.writing-intro a:hover {
+  text-decoration: underline;
 }
 
 .writing-list {

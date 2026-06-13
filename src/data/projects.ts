@@ -2,7 +2,8 @@ export interface Project {
   title: string;
   subtitle?: string;
   link?: string;
-  image: string;
+  image?: string;
+  visualTone?: 'teal' | 'coral' | 'gold' | 'violet';
   date: string;
   desc: string;
   tech?: string[];

@@ -142,6 +142,63 @@
   transform: scale(var(--scale-sm));
 }
 
+.project-card-visual {
+  position: relative;
+  display: grid;
+  place-items: center;
+  aspect-ratio: 16/10;
+  overflow: hidden;
+}
+
+.project-card-visual::before,
+.project-card-visual::after {
+  content: '';
+  position: absolute;
+  border-radius: 999px;
+  opacity: 0.32;
+}
+
+.project-card-visual::before {
+  width: 46%;
+  height: 46%;
+  top: 12%;
+  left: 10%;
+  background: var(--color-white);
+}
+
+.project-card-visual::after {
+  width: 34%;
+  height: 34%;
+  right: 12%;
+  bottom: 12%;
+  background: var(--color-white);
+}
+
+.project-card-visual--teal {
+  background: linear-gradient(135deg, #b9ece5, #d8f5df);
+}
+
+.project-card-visual--coral {
+  background: linear-gradient(135deg, #ffd8cb, #ffe7b7);
+}
+
+.project-card-visual--gold {
+  background: linear-gradient(135deg, #f8e6a8, #cfe9d7);
+}
+
+.project-card-visual--violet {
+  background: linear-gradient(135deg, #ddd6ff, #cce6ff);
+}
+
+.project-card-visual-mark {
+  position: relative;
+  z-index: 1;
+  color: color-mix(in srgb, var(--color-fg-bold) 75%, transparent);
+  font-family: var(--font-heading);
+  font-size: clamp(2.5rem, 8vw, 4rem);
+  font-weight: var(--font-weight-black);
+}
+
 .project-card-overlay {
   position: absolute;
   inset: 0;

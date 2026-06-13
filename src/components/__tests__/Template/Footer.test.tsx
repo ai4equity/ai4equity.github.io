@@ -29,6 +29,7 @@ describe('Footer', () => {
     expect(
       screen.getByText(new RegExp(`© ${currentYear}`)),
     ).toBeInTheDocument();
+    expect(screen.getByText('Last update: June 13, 2026')).toBeInTheDocument();
   });
 
   it('renders navigation links', () => {

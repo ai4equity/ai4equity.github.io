@@ -42,7 +42,6 @@ export default function Hero() {
 
         <div className="hero-chips">
           <span className="hero-chip">AIED</span>
-          <span className="hero-chip">AI</span>
           <span className="hero-chip">Learning Analytics</span>
           <span className="hero-chip">Problem/Game-Based Learning</span>
           <span className="hero-chip">STEM Education</span>

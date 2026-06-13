@@ -19,15 +19,9 @@ export default function Footer() {
             <h3>{AUTHOR_NAME}</h3>
             <p className="footer-role">{currentRole}</p>
             <p className="footer-copyright">
-              &copy; {new Date().getFullYear()} ·{' '}
-              <a
-                href="https://github.com/ai4equity/ai4equity.github.io"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Source
-              </a>
+              &copy; {new Date().getFullYear()}
             </p>
+            <p className="footer-updated">Last update: June 13, 2026</p>
           </div>
         </div>
 

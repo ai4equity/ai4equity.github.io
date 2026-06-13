@@ -45,7 +45,6 @@ describe('Hero', () => {
     render(<Hero />);
 
     expect(screen.getByText('AIED')).toBeInTheDocument();
-    expect(screen.getByText('AI')).toBeInTheDocument();
     expect(screen.getByText('Learning Analytics')).toBeInTheDocument();
     expect(screen.getByText('Problem/Game-Based Learning')).toBeInTheDocument();
     expect(screen.getByText('STEM Education')).toBeInTheDocument();

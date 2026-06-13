@@ -1,36 +1,18 @@
 import type { Metadata } from 'next';
-import Link from 'next/link';
 import PageWrapper from '@/components/Template/PageWrapper';
 import writing from '@/data/writing';
 import { createPageMetadata } from '@/lib/metadata';
-import { getAllPosts } from '@/lib/posts';
 import { formatDate } from '@/lib/utils';
 
-export const metadata: Metadata = {
-  ...createPageMetadata({
-    title: 'Writing',
-    description:
-      'Selected publications by Songhee Han on AI in education, learning analytics, MOOCs, and educational chatbots.',
-    path: '/writing/',
-  }),
-  alternates: {
-    types: {
-      'application/rss+xml': '/feed.xml',
-    },
-  },
-};
+export const metadata: Metadata = createPageMetadata({
+  title: 'Publications',
+  description:
+    'Selected recent publications by Songhee Han on AI in education, learning analytics, MOOCs, and educational chatbots.',
+  path: '/writing/',
+});
 
-interface UnifiedItem {
-  title: string;
-  url: string;
-  date: string;
-  description: string;
-  isExternal: boolean;
-}
-
-// Extracted component to reduce duplication
 interface WritingItemProps {
-  item: UnifiedItem;
+  item: (typeof writing)[number];
   showDate?: boolean;
 }
 
@@ -44,57 +26,29 @@ function WritingItem({ item, showDate = true }: WritingItemProps) {
       )}
       <h2 className="writing-title">{item.title}</h2>
       <p className="writing-description">{item.description}</p>
-      {item.isExternal && (
-        <span className="writing-external" aria-hidden="true">
-          ↗
-        </span>
-      )}
+      <span className="writing-external" aria-hidden="true">
+        ↗
+      </span>
     </>
   );
 
-  if (item.isExternal) {
-    return (
-      <a
-        href={item.url}
-        target="_blank"
-        rel="noopener noreferrer"
-        className="writing-item"
-      >
-        {content}
-      </a>
-    );
-  }
-
   return (
-    <Link href={item.url} className="writing-item">
+    <a
+      href={item.url}
+      target="_blank"
+      rel="noopener noreferrer"
+      className="writing-item"
+    >
       {content}
-    </Link>
+    </a>
   );
 }
 
 export default function WritingPage() {
-  // Get internal posts from markdown files
-  const internalPosts = getAllPosts();
-  const internalItems: UnifiedItem[] = internalPosts.map((post) => ({
-    title: post.title,
-    url: `/writing/${post.slug}`,
-    date: post.date,
-    description: post.description,
-    isExternal: false,
-  }));
-
-  // Get external articles from data file
-  const externalItems: UnifiedItem[] = writing.map((item) => ({
-    ...item,
-    isExternal: true,
-  }));
-
-  // Merge and sort all items
-  const allItems = [...internalItems, ...externalItems];
-  const dated = allItems
+  const dated = writing
     .filter((item) => item.date)
     .sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
-  const undated = allItems.filter((item) => !item.date);
+  const undated = writing.filter((item) => !item.date);
 
   return (
     <PageWrapper>
@@ -102,15 +56,19 @@ export default function WritingPage() {
         <header className="writing-header">
           <div className="writing-header-row">
             <h1 className="page-title">Publications</h1>
-            <a
-              href="/feed.xml"
-              className="writing-rss-link"
-              title="Publications RSS Feed"
-              aria-label="Publications RSS Feed"
-            >
-              RSS
-            </a>
           </div>
+          <p className="page-subtitle writing-intro">
+            Selected recent publications are listed here. For a fuller and
+            current publication record, see{' '}
+            <a
+              href="https://scholar.google.com/citations?user=nbDDsAsAAAAJ&hl=en"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Google Scholar
+            </a>
+            .
+          </p>
         </header>
 
         <div className="writing-list">
