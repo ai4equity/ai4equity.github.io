@@ -2,16 +2,16 @@ export const aboutMarkdown = `# Intro
 
 I am Songhee Han, currently an assistant professor in the Instructional Systems & Learning Technologies program at Florida State University. My work focuses on educational equity and technology use in learning environments.
 
-My recent research centers on educational chatbots and generative AI systems in learning environments, with particular attention to how students actually use these tools and how that use relates to learning processes and outcomes. Rather than focusing on technical capability alone, my work examines implementation, learner autonomy, expectations, navigation behavior, sentiment patterns, and interaction patterns, especially in relation to equitable participation and support.
+My recent research centers on educational chatbots and generative AI systems in learning environments, with particular attention to how students actually use these tools and how that use relates to learning processes and outcomes. Instead of focusing solely on technical capability, my work examines implementation, learner autonomy, expectations, navigation behavior, sentiment patterns, and interaction patterns, especially in relation to equitable participation and support.
 
 A defining feature of my research is sustained collaboration with graduate students. Many published and in-progress manuscripts have developed through mentorship relationships in which students participate in data analysis, literature synthesis, and manuscript preparation.
 
-My research also extends to motivation, learning analytics, and problem-based learning in K-12 and higher education contexts. Across these areas, I examine how cognitive, motivational, and contextual factors interact with instructional design.
+My research also extends to motivation, learning analytics, and problem-based learning in K-12 and higher education contexts. Across these areas, I examine how cognitive, motivational, and contextual factors interact with instructional design in technology-enhanced learning environments.
 
 # Research Areas
 
 - Educational equity and technology use
-- Educational chatbots and generative AI in learning environments
+- Generative AI in learning environments
 - Learning analytics and educational data mining
 - Equity and inclusion in online learning
 - Massive open online courses
