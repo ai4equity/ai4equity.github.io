@@ -50,7 +50,7 @@
 
 /* Dark mode component overrides using semantic tokens */
 [data-theme='dark'] .site-header {
-  background-color: color-mix(in srgb, var(--color-bg-alt) 90%, transparent);
+  background-color: #ffffff;
   border-bottom-color: var(--color-border);
 }
 
