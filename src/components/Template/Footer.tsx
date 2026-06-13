@@ -48,13 +48,6 @@ export default function Footer() {
               Connect
             </h4>
             <div className="footer-contact-links">
-              <a
-                href="https://github.com/ai4equity"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                GitHub
-              </a>
               <a href="mailto:songpublic9@gmail.com">songpublic9@gmail.com</a>
             </div>
           </div>

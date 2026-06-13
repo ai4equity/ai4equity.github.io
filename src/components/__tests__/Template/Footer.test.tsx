@@ -67,10 +67,6 @@ describe('Footer', () => {
     const socialSection = document.querySelector('.footer-social');
     expect(socialSection).toBeInTheDocument();
     expect(screen.getByText('Connect')).toBeInTheDocument();
-    expect(screen.getByRole('link', { name: /github/i })).toHaveAttribute(
-      'href',
-      'https://github.com/ai4equity',
-    );
     expect(
       screen.getByRole('link', { name: /songpublic9@gmail.com/i }),
     ).toHaveAttribute('href', 'mailto:songpublic9@gmail.com');
