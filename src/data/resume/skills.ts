@@ -63,6 +63,31 @@ const skills: Skill[] = [
     category: ['Learning Technologies', 'R&D'],
   },
   {
+    title: 'Teacher-Led AI Design',
+    competency: 4,
+    category: ['R&D'],
+  },
+  {
+    title: 'AI-Supported Mathematics Instruction',
+    competency: 4,
+    category: ['R&D'],
+  },
+  {
+    title: 'Open-Source Chatbot Pipelines',
+    competency: 4,
+    category: ['Learning Technologies', 'R&D'],
+  },
+  {
+    title: 'Learning Dashboard Pipelines',
+    competency: 4,
+    category: ['Learning Technologies', 'R&D'],
+  },
+  {
+    title: 'Open Educational Resources',
+    competency: 4,
+    category: ['Learning Technologies', 'R&D'],
+  },
+  {
     title: 'Quantitative Research',
     competency: 4,
     category: ['Methods'],
@@ -101,10 +126,27 @@ const FALLBACK_COLORS: { color: string; textColor: 'dark' | 'light' }[] = [
   { color: '#64cb7b', textColor: 'dark' },
 ];
 
+const CATEGORY_ORDER = [
+  'R&D',
+  'Instructional Design',
+  'Learning Technologies',
+  'Methods',
+  'Research',
+  'Teaching',
+];
+
 function buildCategories(skillsList: Skill[]): Category[] {
   const uniqueCategories = Array.from(
     new Set(skillsList.flatMap(({ category }) => category)),
-  ).sort();
+  ).sort((a, b) => {
+    const aIndex = CATEGORY_ORDER.indexOf(a);
+    const bIndex = CATEGORY_ORDER.indexOf(b);
+
+    if (aIndex !== -1 && bIndex !== -1) return aIndex - bIndex;
+    if (aIndex !== -1) return -1;
+    if (bIndex !== -1) return 1;
+    return a.localeCompare(b);
+  });
 
   const allColors = [...CATEGORY_COLORS, ...FALLBACK_COLORS];
 
