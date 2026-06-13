@@ -25,12 +25,7 @@ export default function ResumePage() {
         <header className="resume-header">
           <h1 className="resume-title">Resume</h1>
           <p className="resume-summary">
-            Educational researcher and data scientist in Instructional Systems
-            &amp; Learning Technologies at Florida State University. Research
-            areas include educational equity, technology use, educational
-            chatbots, generative AI in learning environments, learning
-            analytics, motivation, student interaction patterns, and
-            problem-based learning.
+            Educational researcher and data scientist
           </p>
         </header>
 
