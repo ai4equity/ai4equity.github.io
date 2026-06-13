@@ -15,13 +15,13 @@ const data: ContactItem[] = [
     icon: faGithub,
   },
   {
-    link: 'mailto:songheehan@fsu.edu',
-    label: 'FSU-related email',
+    link: 'mailto:songpublic9@gmail.com',
+    label: 'Non-FSU email',
     icon: faEnvelope,
   },
   {
-    link: 'mailto:songpublic9@gmail.com',
-    label: 'Non-FSU email',
+    link: 'mailto:songheehan@fsu.edu',
+    label: 'FSU-related email',
     icon: faEnvelope,
   },
 ];

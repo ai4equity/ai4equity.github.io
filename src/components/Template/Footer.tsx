@@ -1,6 +1,5 @@
 import Link from 'next/link';
 
-import ContactIcons from '@/components/Contact/ContactIcons';
 import work from '@/data/resume/work';
 import { AUTHOR_NAME } from '@/lib/utils';
 
@@ -53,7 +52,16 @@ export default function Footer() {
             <h4 id="footer-social-heading" className="footer-social-label">
               Connect
             </h4>
-            <ContactIcons />
+            <div className="footer-contact-links">
+              <a
+                href="https://github.com/ai4equity"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                GitHub
+              </a>
+              <a href="mailto:songpublic9@gmail.com">songpublic9@gmail.com</a>
+            </div>
           </div>
         </div>
       </div>
