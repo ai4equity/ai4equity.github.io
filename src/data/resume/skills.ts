@@ -15,22 +15,22 @@ const skills: Skill[] = [
   {
     title: 'AI in Education',
     competency: 5,
-    category: ['Research'],
+    category: ['R&D', 'Research'],
   },
   {
     title: 'Educational Chatbots',
     competency: 5,
-    category: ['Learning Technologies', 'Research'],
+    category: ['Learning Technologies', 'R&D', 'Research'],
   },
   {
     title: 'Learning Analytics',
     competency: 5,
-    category: ['Methods', 'Research'],
+    category: ['Methods', 'R&D', 'Research'],
   },
   {
     title: 'Educational Data Mining',
     competency: 5,
-    category: ['Methods', 'Research'],
+    category: ['Methods', 'R&D', 'Research'],
   },
   {
     title: 'Educational Equity',
@@ -40,7 +40,7 @@ const skills: Skill[] = [
   {
     title: 'Technology Use in Learning',
     competency: 5,
-    category: ['Learning Technologies', 'Research'],
+    category: ['Learning Technologies', 'R&D', 'Research'],
   },
   {
     title: 'MOOCs',
@@ -60,7 +60,7 @@ const skills: Skill[] = [
   {
     title: 'Retrieval-Augmented Generation',
     competency: 4,
-    category: ['Learning Technologies'],
+    category: ['Learning Technologies', 'R&D'],
   },
   {
     title: 'Quantitative Research',
@@ -75,7 +75,7 @@ const skills: Skill[] = [
   {
     title: 'Research Synthesis',
     competency: 4,
-    category: ['Methods'],
+    category: ['Methods', 'R&D'],
   },
   {
     title: 'Doctoral Mentoring',
