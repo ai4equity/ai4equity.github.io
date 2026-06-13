@@ -8,6 +8,8 @@ import type { Category, Skill } from '@/data/resume/skills';
 import CategoryButton from './Skills/CategoryButton';
 import SkillTag from './Skills/SkillTag';
 
+const SKILL_ORDER = ['Training Curriculum and Instruction'];
+
 interface SkillsProps {
   skills: Skill[];
   categories: Category[];
@@ -72,8 +74,14 @@ export default function Skills({ skills, categories }: SkillsProps) {
 
   // Memoize sorting, filtering, and grouping to avoid recalculating on every render
   const groupedSkills = useMemo(() => {
-    // Sort skills by competency (highest first), then alphabetically
+    // Sort skills by priority, competency (highest first), then alphabetically
     const sortedSkills = [...skills].sort((a, b) => {
+      const aIndex = SKILL_ORDER.indexOf(a.title);
+      const bIndex = SKILL_ORDER.indexOf(b.title);
+
+      if (aIndex !== -1 && bIndex !== -1) return aIndex - bIndex;
+      if (aIndex !== -1) return -1;
+      if (bIndex !== -1) return 1;
       if (a.competency !== b.competency) return b.competency - a.competency;
       return a.title.localeCompare(b.title);
     });
