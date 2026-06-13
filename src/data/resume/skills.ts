@@ -15,22 +15,22 @@ const skills: Skill[] = [
   {
     title: 'AI in Education',
     competency: 5,
-    category: ['R&D', 'Research'],
+    category: ['Research'],
   },
   {
     title: 'Educational Chatbots',
     competency: 5,
-    category: ['Learning Technologies', 'R&D', 'Research'],
+    category: ['Learning Technologies', 'Research'],
   },
   {
     title: 'Learning Analytics',
     competency: 5,
-    category: ['Methods', 'R&D', 'Research'],
+    category: ['Methods', 'Research'],
   },
   {
     title: 'Educational Data Mining',
     competency: 5,
-    category: ['Methods', 'R&D', 'Research'],
+    category: ['Methods', 'Research'],
   },
   {
     title: 'Educational Equity',
@@ -40,7 +40,7 @@ const skills: Skill[] = [
   {
     title: 'Technology Use in Learning',
     competency: 5,
-    category: ['Learning Technologies', 'R&D', 'Research'],
+    category: ['Learning Technologies', 'Research'],
   },
   {
     title: 'MOOCs',
@@ -60,12 +60,7 @@ const skills: Skill[] = [
   {
     title: 'Retrieval-Augmented Generation',
     competency: 4,
-    category: ['Learning Technologies', 'R&D'],
-  },
-  {
-    title: 'Teacher-Led AI Design',
-    competency: 4,
-    category: ['R&D'],
+    category: ['Learning Technologies'],
   },
   {
     title: 'AI-Supported Mathematics Instruction',
@@ -75,17 +70,12 @@ const skills: Skill[] = [
   {
     title: 'Open-Source Chatbot Pipelines',
     competency: 4,
-    category: ['Learning Technologies', 'R&D'],
+    category: ['R&D'],
   },
   {
     title: 'Learning Dashboard Pipelines',
     competency: 4,
-    category: ['Learning Technologies', 'R&D'],
-  },
-  {
-    title: 'Open Educational Resources',
-    competency: 4,
-    category: ['Learning Technologies', 'R&D'],
+    category: ['R&D'],
   },
   {
     title: 'Quantitative Research',
@@ -100,7 +90,7 @@ const skills: Skill[] = [
   {
     title: 'Research Synthesis',
     competency: 4,
-    category: ['Methods', 'R&D'],
+    category: ['Methods'],
   },
   {
     title: 'Doctoral Mentoring',
