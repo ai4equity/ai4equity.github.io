@@ -12,21 +12,6 @@ vi.mock('next/navigation', () => ({
 describe('Navigation', () => {
   beforeEach(() => {
     mockPathname.mockReturnValue('/');
-
-    // Mock matchMedia for ThemeToggle
-    Object.defineProperty(window, 'matchMedia', {
-      writable: true,
-      value: vi.fn().mockImplementation((query) => ({
-        matches: false,
-        media: query,
-        onchange: null,
-        addListener: vi.fn(),
-        removeListener: vi.fn(),
-        addEventListener: vi.fn(),
-        removeEventListener: vi.fn(),
-        dispatchEvent: vi.fn(),
-      })),
-    });
   });
 
   it('renders the logo link to home', () => {
@@ -73,11 +58,11 @@ describe('Navigation', () => {
     expect(resumeLink).toHaveClass('active');
   });
 
-  it('renders theme toggle and hamburger menu', () => {
+  it('renders navigation actions', () => {
     render(<Navigation />);
 
-    // Theme toggle should be present (placeholder initially due to SSR)
     const navActions = document.querySelector('.nav-actions');
     expect(navActions).toBeInTheDocument();
+    expect(document.querySelector('.theme-toggle')).not.toBeInTheDocument();
   });
 });
