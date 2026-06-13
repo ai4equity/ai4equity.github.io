@@ -15,26 +15,8 @@ export default function Hero() {
         </h1>
 
         <p className="hero-tagline">
-          Educational researcher and data scientist in{' '}
-          <a
-            href="https://annescollege.fsu.edu/instructional-systems-and-learning-technologies"
-            className="hero-highlight"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Instructional Systems &amp; Learning Technologies
-          </a>{' '}
-          at{' '}
-          <a
-            href="https://www.fsu.edu/"
-            className="hero-highlight"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Florida State University
-          </a>{' '}
-          studying educational equity, technology use, generative AI, and
-          student interaction patterns.
+          Educational researcher and data scientist studying educational equity,
+          technology use, generative AI, and student interaction patterns.
           <br />
           My work connects learner autonomy, motivation, and learning process
           and outcomes in technology-mediated learning environments.
