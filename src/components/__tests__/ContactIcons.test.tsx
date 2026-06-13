@@ -15,12 +15,20 @@ describe('ContactIcons', () => {
       expect.stringContaining('github.com'),
     );
 
-    // Check if email link is present
-    const emailLink = screen.getByRole('link', { name: /email/i });
-    expect(emailLink).toBeInTheDocument();
-    expect(emailLink).toHaveAttribute(
+    // Check if email links are present
+    const fsuEmailLink = screen.getByRole('link', {
+      name: /fsu-related email/i,
+    });
+    expect(fsuEmailLink).toBeInTheDocument();
+    expect(fsuEmailLink).toHaveAttribute('href', 'mailto:songheehan@fsu.edu');
+
+    const nonFsuEmailLink = screen.getByRole('link', {
+      name: /non-fsu email/i,
+    });
+    expect(nonFsuEmailLink).toBeInTheDocument();
+    expect(nonFsuEmailLink).toHaveAttribute(
       'href',
-      expect.stringContaining('mailto:'),
+      'mailto:songpublic9@gmail.com',
     );
   });
 

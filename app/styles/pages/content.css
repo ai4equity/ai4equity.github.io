@@ -192,9 +192,23 @@
   margin-bottom: 2.5rem;
 }
 
+.contact-email-list {
+  display: grid;
+  gap: 1rem;
+  justify-items: center;
+  margin-bottom: 0.75rem;
+}
+
 .contact-email-container {
   display: block;
   margin-bottom: 0.75rem;
+}
+
+.contact-email-label {
+  color: var(--color-fg-light);
+  font-size: var(--text-sm);
+  font-weight: var(--font-weight-semibold);
+  margin-bottom: 0.35rem;
 }
 
 .contact-email-link {

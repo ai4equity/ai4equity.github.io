@@ -16,7 +16,10 @@ export default function Hero() {
 
         <p className="hero-tagline">
           Educational researcher and data scientist in{' '}
-          <a href="https://education.fsu.edu/" className="hero-highlight">
+          <a
+            href="https://annescollege.fsu.edu/instructional-systems-and-learning-technologies"
+            className="hero-highlight"
+          >
             Instructional Systems &amp; Learning Technologies
           </a>{' '}
           at{' '}

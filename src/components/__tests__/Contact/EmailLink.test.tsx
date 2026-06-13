@@ -7,14 +7,24 @@ describe('EmailLink', () => {
   it('renders the email address', () => {
     render(<EmailLink />);
 
-    expect(screen.getByText('sh24br')).toBeInTheDocument();
+    expect(screen.getByText('FSU-related matters')).toBeInTheDocument();
+    expect(screen.getByText('Non-FSU matters')).toBeInTheDocument();
+    expect(screen.getByText('songheehan')).toBeInTheDocument();
     expect(screen.getByText('@fsu.edu')).toBeInTheDocument();
+    expect(screen.getByText('songpublic9')).toBeInTheDocument();
+    expect(screen.getByText('@gmail.com')).toBeInTheDocument();
   });
 
-  it('renders a mailto link', () => {
+  it('renders mailto links', () => {
     render(<EmailLink />);
 
-    const link = screen.getByRole('link');
-    expect(link).toHaveAttribute('href', 'mailto:sh24br@fsu.edu');
+    expect(screen.getByRole('link', { name: /songheehan/i })).toHaveAttribute(
+      'href',
+      'mailto:songheehan@fsu.edu',
+    );
+    expect(screen.getByRole('link', { name: /songpublic9/i })).toHaveAttribute(
+      'href',
+      'mailto:songpublic9@gmail.com',
+    );
   });
 });

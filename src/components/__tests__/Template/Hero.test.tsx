@@ -24,7 +24,10 @@ describe('Hero', () => {
     const programLink = screen.getByRole('link', {
       name: /instructional systems/i,
     });
-    expect(programLink).toHaveAttribute('href', 'https://education.fsu.edu/');
+    expect(programLink).toHaveAttribute(
+      'href',
+      'https://annescollege.fsu.edu/instructional-systems-and-learning-technologies',
+    );
     expect(programLink).toHaveClass('hero-highlight');
 
     const fsuLink = screen.getByRole('link', {

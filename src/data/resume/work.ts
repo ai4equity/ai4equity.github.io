@@ -15,7 +15,7 @@ const work: Position[] = [
   {
     name: 'Florida State University',
     position: 'Faculty, Instructional Systems & Learning Technologies',
-    url: 'https://education.fsu.edu/',
+    url: 'https://annescollege.fsu.edu/instructional-systems-and-learning-technologies',
     startDate: '2024-08-01',
     summary: `Faculty member in Instructional Systems & Learning Technologies, Educational Psychology & Learning Systems, Anne Spencer Daves College of Education, Health, and Human Sciences.`,
     highlights: [

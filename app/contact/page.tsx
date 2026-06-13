@@ -23,7 +23,6 @@ export default function ContactPage() {
         <div className="contact-content">
           <div className="contact-email-block">
             <EmailLink />
-            <p className="contact-hint">Florida State University</p>
           </div>
 
           <div className="contact-divider">
