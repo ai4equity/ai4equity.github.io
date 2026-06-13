@@ -7,34 +7,17 @@ describe('ContactIcons', () => {
   it('renders contact icons', () => {
     render(<ContactIcons />);
 
-    // Check if GitHub link is present
-    const githubLink = screen.getByRole('link', { name: /github/i });
-    expect(githubLink).toBeInTheDocument();
-    expect(githubLink).toHaveAttribute(
+    const linkedInLink = screen.getByRole('link', { name: /linkedin/i });
+    expect(linkedInLink).toBeInTheDocument();
+    expect(linkedInLink).toHaveAttribute(
       'href',
-      expect.stringContaining('github.com'),
-    );
-
-    // Check if email links are present
-    const fsuEmailLink = screen.getByRole('link', {
-      name: /fsu-related email/i,
-    });
-    expect(fsuEmailLink).toBeInTheDocument();
-    expect(fsuEmailLink).toHaveAttribute('href', 'mailto:songheehan@fsu.edu');
-
-    const nonFsuEmailLink = screen.getByRole('link', {
-      name: /non-fsu email/i,
-    });
-    expect(nonFsuEmailLink).toBeInTheDocument();
-    expect(nonFsuEmailLink).toHaveAttribute(
-      'href',
-      'mailto:songpublic9@gmail.com',
+      'https://www.linkedin.com/in/songhee-han/',
     );
   });
 
-  it('has correct number of contact links', () => {
+  it('only renders LinkedIn as the social link', () => {
     render(<ContactIcons />);
     const links = screen.getAllByRole('link');
-    expect(links.length).toBeGreaterThan(0);
+    expect(links.length).toBe(1);
   });
 });

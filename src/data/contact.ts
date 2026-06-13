@@ -1,6 +1,5 @@
 import { IconDefinition } from '@fortawesome/fontawesome-svg-core';
-import { faGithub } from '@fortawesome/free-brands-svg-icons/faGithub';
-import { faEnvelope } from '@fortawesome/free-regular-svg-icons/faEnvelope';
+import { faLinkedinIn } from '@fortawesome/free-brands-svg-icons/faLinkedinIn';
 
 export interface ContactItem {
   link: string;
@@ -10,19 +9,9 @@ export interface ContactItem {
 
 const data: ContactItem[] = [
   {
-    link: 'https://github.com/ai4equity',
-    label: 'Github',
-    icon: faGithub,
-  },
-  {
-    link: 'mailto:songpublic9@gmail.com',
-    label: 'Non-FSU email',
-    icon: faEnvelope,
-  },
-  {
-    link: 'mailto:songheehan@fsu.edu',
-    label: 'FSU-related email',
-    icon: faEnvelope,
+    link: 'https://www.linkedin.com/in/songhee-han/',
+    label: 'LinkedIn',
+    icon: faLinkedinIn,
   },
 ];
 
