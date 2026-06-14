@@ -30,7 +30,7 @@ const skills: Skill[] = [
   {
     title: 'Educational Data Mining',
     competency: 5,
-    category: ['Methods', 'Research'],
+    category: ['Methods'],
   },
   {
     title: 'Educational Equity',
@@ -40,7 +40,7 @@ const skills: Skill[] = [
   {
     title: 'Technology Use in Learning',
     competency: 5,
-    category: ['Learning Technologies', 'Research'],
+    category: ['Research'],
   },
   {
     title: 'MOOCs',
