@@ -1,6 +1,6 @@
 # Songhee Han Personal Website
 
-Personal academic website for Songhee Han, hosted with GitHub Pages at:
+Personal website for Songhee Han, hosted with GitHub Pages at:
 
 https://ai4equity.github.io
 
