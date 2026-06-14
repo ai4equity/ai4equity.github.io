@@ -98,6 +98,11 @@ const skills: Skill[] = [
     category: ['Methods'],
   },
   {
+    title: 'ISLT Courses',
+    competency: 4,
+    category: ['Teaching'],
+  },
+  {
     title: 'Doctoral Mentoring',
     competency: 4,
     category: ['Teaching'],

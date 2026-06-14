@@ -13,6 +13,7 @@ const SKILL_ORDER = [
   'Mixed-methods',
   'Learning Analytics',
   'Educational Data Mining',
+  'ISLT Courses',
 ];
 
 interface SkillsProps {
