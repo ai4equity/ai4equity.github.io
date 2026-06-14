@@ -23,6 +23,11 @@ const skills: Skill[] = [
     category: ['Learning Technologies', 'Research'],
   },
   {
+    title: 'Mixed-methods',
+    competency: 5,
+    category: ['Methods'],
+  },
+  {
     title: 'Learning Analytics',
     competency: 5,
     category: ['Methods', 'Research'],

@@ -8,7 +8,12 @@ import type { Category, Skill } from '@/data/resume/skills';
 import CategoryButton from './Skills/CategoryButton';
 import SkillTag from './Skills/SkillTag';
 
-const SKILL_ORDER = ['Training Curriculum and Instruction'];
+const SKILL_ORDER = [
+  'Training Curriculum and Instruction',
+  'Mixed-methods',
+  'Learning Analytics',
+  'Educational Data Mining',
+];
 
 interface SkillsProps {
   skills: Skill[];
