@@ -15,13 +15,10 @@ export default function Hero() {
         </h1>
 
         <p className="hero-tagline">
-          Educational researcher and data scientist designing equity-focused
-          learning interventions informed by observable behavioral data,
-          generative AI use, and latent learner characteristics.
-          <br />
-          My work connects learner autonomy, motivation, interaction patterns,
-          and learning processes and outcomes in technology-mediated learning
-          environments.
+          Educational researcher and data scientist conducting design-based
+          research on equity-focused learning interventions informed by
+          observable behavioral data, generative AI use, and latent learner
+          characteristics.
         </p>
 
         <div className="hero-chips">
