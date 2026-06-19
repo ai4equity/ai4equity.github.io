@@ -15,7 +15,7 @@ export default function Hero() {
         </h1>
 
         <p className="hero-tagline">
-          Educational researcher and data scientist conducting design-based
+          Educational researcher and data scientist conducting
           research on equity-focused learning interventions informed by
           observable behavioral data, generative AI use, and latent learner
           characteristics.
