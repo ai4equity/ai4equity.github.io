@@ -2,7 +2,7 @@ export const aboutMarkdown = `# Intro
 
 I am Songhee Han, an assistant professor in the Instructional Systems & Learning Technologies (ISLT) program at Florida State University (FSU). My work focuses on educational equity and technology use in learning environments.
 
-My recent research centers on educational chatbots and generative AI systems in learning environments, with particular attention to how students actually use these tools and how that use relates to learning processes and outcomes. Instead of focusing solely on technical capability, my work examines implementation, learner autonomy, expectations, navigation behavior, sentiment patterns, and interaction patterns, especially in relation to equitable participation and support.
+My recent research centers on educational chatbots and generative AI systems in learning environments, with particular attention to how students actually use these tools in courses and how that use relates to learning processes and outcomes. Instead of focusing solely on technical capabilities, my work examines implementation, learner autonomy, expectations, navigation behavior, sentiment patterns, and interaction patterns, especially in relation to equitable participation and support.
 
 A defining feature of my research is sustained collaboration with graduate students. Many published and in-progress manuscripts have developed through mentorship relationships in which students participate in data analysis, literature synthesis, and manuscript preparation.
 
