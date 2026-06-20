@@ -16,7 +16,7 @@ const data: Project[] = [
     featured: true,
   },
   {
-    title: 'Jiyoon Han',
+    title: 'Jiyoon Han, MA',
     subtitle: 'AI4Equity Lab Member',
     visualTone: 'coral',
     date: '2025-01-01',
