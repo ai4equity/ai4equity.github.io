@@ -16,12 +16,12 @@ const data: Project[] = [
     featured: true,
   },
   {
-    title: 'Student A',
+    title: 'Jiyoon Han',
     subtitle: 'AI4Equity Lab Member',
     visualTone: 'coral',
     date: '2025-01-01',
     desc: 'Placeholder profile for an AI4Equity Lab member. Research interests and role details can be added later.',
-    tech: ['Educational Equity', 'Technology Use', 'Learning Research'],
+    tech: ['AI in education', 'Generative AI for Learning', 'Human-AI Interaction', 'Learning Analytics'],
   },
   {
     title: 'Student B',
