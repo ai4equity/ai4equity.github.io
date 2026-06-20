@@ -31,6 +31,7 @@ const data: Project[] = [
     desc: 'Placeholder profile for an AI4Equity Lab member. Research interests and role details can be added later.',
     tech: ['Generative AI', 'Learning Analytics', 'Instructional Design'],
   },
+  /*
   {
     title: 'Student C',
     subtitle: 'AI4Equity Lab Member',
@@ -39,6 +40,7 @@ const data: Project[] = [
     desc: 'Placeholder profile for an AI4Equity Lab member. Research interests and role details can be added later.',
     tech: ['Online Learning', 'Educational Chatbots', 'Student Support'],
   },
+  */
 ];
 
 export default data;
