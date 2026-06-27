@@ -20,7 +20,7 @@ const data: Project[] = [
     subtitle: 'AI4Equity Lab Member',
     visualTone: 'coral',
     date: '2025-01-01',
-    desc: 'As a former elementary teacher, I design and study AI-supported learning environments that foster human-AI interaction and support teaching and learning.',
+    desc: "As a former elementary teacher, I design and study AI-supported learning environments that foster human-AI interaction and support teaching and learning.",
     tech: ['AI in education', 'Generative AI for Learning', 'Human-AI Interaction', 'Learning Analytics'],
   },
   {
@@ -28,7 +28,7 @@ const data: Project[] = [
     subtitle: 'AI4Equity Lab Member',
     visualTone: 'gold',
     date: '2025-01-01',
-    desc: 'I'm interested in designing pedagogy-based educational GenAI to maximize learning effects, including critical thinking skills.',
+    desc: "I'm interested in designing pedagogy-based educational GenAI to maximize learning effects, including critical thinking skills.",
     tech: ['Instructional Design', 'Learner Agency', 'Generative AI for Learning', 'Learning Analytics'],
   },
   /*
