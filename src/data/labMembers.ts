@@ -20,16 +20,16 @@ const data: Project[] = [
     subtitle: 'AI4Equity Lab Member',
     visualTone: 'coral',
     date: '2025-01-01',
-    desc: 'Placeholder profile for an AI4Equity Lab member. Research interests and role details can be added later.',
+    desc: 'As a former elementary teacher, I design and study AI-supported learning environments that foster human-AI interaction and support teaching and learning.',
     tech: ['AI in education', 'Generative AI for Learning', 'Human-AI Interaction', 'Learning Analytics'],
   },
   {
-    title: 'Student B',
+    title: 'Jueun Shin, MA',
     subtitle: 'AI4Equity Lab Member',
     visualTone: 'gold',
     date: '2025-01-01',
-    desc: 'Placeholder profile for an AI4Equity Lab member. Research interests and role details can be added later.',
-    tech: ['Generative AI', 'Learning Analytics', 'Instructional Design'],
+    desc: 'I'm interested in designing pedagogy-based educational GenAI to maximize learning effects, including critical thinking skills.',
+    tech: ['Instructional Design', 'Learner Agency', 'Generative AI for Learning', 'Learning Analytics'],
   },
   /*
   {
