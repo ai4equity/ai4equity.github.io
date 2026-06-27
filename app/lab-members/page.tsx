@@ -20,9 +20,6 @@ export default function LabMembersPage() {
       <section className="projects-page">
         <header className="projects-header">
           <h1 className="page-title">AI4Equity Lab Members</h1>
-          <p className="page-subtitle">
-            Research group members and collaborators
-          </p>
         </header>
 
         {featuredMembers.length > 0 && (
