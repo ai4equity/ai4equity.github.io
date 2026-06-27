@@ -7,7 +7,6 @@ import { createPageMetadata } from '@/lib/metadata';
 
 export const metadata: Metadata = createPageMetadata({
   title: 'Grants',
-  description: "Funded projects and grants listed in Songhee Han's CV.",
   path: '/projects/',
 });
 
