@@ -4,7 +4,7 @@ import { AUTHOR_NAME, SITE_URL, TWITTER_HANDLE } from './utils';
 
 interface PageMetadataOptions {
   title: string;
-  description: string;
+  description?: string | null;
   path?: `/${string}`;
 }
 
@@ -15,16 +15,27 @@ export function createPageMetadata({
 }: PageMetadataOptions): Metadata {
   const absoluteUrl = path ? new URL(path, SITE_URL).toString() : undefined;
   const pageTitle = `${title} | ${AUTHOR_NAME}`;
+  const hasDescription =
+    typeof description === 'string' && description.length > 0;
+  const clearsDescription = description === null;
 
   return {
     title,
-    description,
+    ...(clearsDescription
+      ? { description: null }
+      : hasDescription
+        ? { description }
+        : {}),
     openGraph: {
       type: 'website',
       locale: 'en_US',
       siteName: AUTHOR_NAME,
       title: pageTitle,
-      description,
+      ...(clearsDescription
+        ? { description: '' }
+        : hasDescription
+          ? { description }
+          : {}),
       ...(absoluteUrl ? { url: absoluteUrl } : {}),
       images: [
         {
@@ -40,7 +51,11 @@ export function createPageMetadata({
       site: TWITTER_HANDLE,
       creator: TWITTER_HANDLE,
       title: pageTitle,
-      description,
+      ...(clearsDescription
+        ? { description: null }
+        : hasDescription
+          ? { description }
+          : {}),
       images: ['/images/me.jpg'],
     },
   };

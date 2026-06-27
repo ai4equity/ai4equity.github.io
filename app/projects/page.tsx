@@ -7,6 +7,7 @@ import { createPageMetadata } from '@/lib/metadata';
 
 export const metadata: Metadata = createPageMetadata({
   title: 'Grants',
+  description: null,
   path: '/projects/',
 });
 
