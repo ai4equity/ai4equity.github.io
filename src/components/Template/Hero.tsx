@@ -21,12 +21,12 @@ export default function Hero() {
           characteristics.
         </p>
 
-        <div className="hero-chips">
+        /*<div className="hero-chips">
           <span className="hero-chip">AIED</span>
           <span className="hero-chip">Learning Analytics</span>
           <span className="hero-chip">Problem/Game-Based Learning</span>
           <span className="hero-chip">STEM Education</span>
-        </div>
+        </div>*/
 
         <div className="hero-cta">
           <Link href="/about" className="button button-primary">
