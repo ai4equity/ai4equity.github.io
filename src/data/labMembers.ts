@@ -17,7 +17,7 @@ const data: Project[] = [
   },
   {
     title: 'Jiyoon Han, MA',
-    subtitle: 'PhD Student', 'jh25@fsu.edu'
+    subtitle: 'PhD Student|jh25@fsu.edu'
     visualTone: 'coral',
     date: '2025-01-01',
     desc: "As a former elementary teacher, I design and study AI-supported learning environments that foster human-AI interaction and support teaching and learning.",
@@ -25,7 +25,7 @@ const data: Project[] = [
   },
   {
     title: 'Jueun Shin, MA',
-    subtitle: 'PhD Student', 'js25e@fsu.edu'
+    subtitle: 'PhD Student|js25e@fsu.edu'
     visualTone: 'gold',
     date: '2025-01-01',
     desc: "I'm interested in designing pedagogy-based educational GenAI to maximize learning effects, including critical thinking skills.",
