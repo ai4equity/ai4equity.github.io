@@ -17,7 +17,7 @@ const data: Project[] = [
       'Anne Spencer Daves College of Education, Health, and Human Sciences',
     image: '/images/projects/generative-ai-math-instruction.jpg',
     date: '2026-01-01',
-    desc: 'PI role. Teacher-led design and implementation of generative AI-supported mathematics instruction. Funded by Anne Spencer Daves College of Education, Health, and Human Sciences, Florida State University. Total award $25,213.59.',
+    desc: 'PI role. Teacher-led design and implementation of generative AI-supported mathematics instruction. Funded by Anne Spencer Daves College of Education, Health, and Human Sciences, Florida State University. Total award $25,214.',
     tech: ['Generative AI', 'Mathematics Instruction', 'Teacher-Led Design'],
     featured: true,
   },
