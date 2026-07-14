@@ -1,7 +1,7 @@
 const EMAILS = [
   {
     label: 'FSU-related matters',
-    email: 'songheehan@fsu.edu',
+    email: 'songhee.han@fsu.edu',
   },
   {
     label: 'Non-FSU matters',
