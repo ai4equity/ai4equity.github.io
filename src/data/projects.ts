@@ -32,7 +32,7 @@ const data: Project[] = [
   },
   {
     title: 'RAG Chatbot and Dashboard Pipelines',
-    subtitle: 'FSU / AWS Funding for Computer Support Seed Fund',
+    subtitle: 'Florida State University / Amazon Web Services',
     image: '/images/projects/rag-dashboard-pipelines.jpg',
     date: '2025-04-01',
     desc: "PI role. Large language model-powered retrieval-augmented generation chatbot and dashboard pipelines for students' academic success. Total award $20,000.",
