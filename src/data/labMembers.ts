@@ -20,7 +20,7 @@ const data: Project[] = [
     subtitle: 'PhD Student | jh25@fsu.edu',
     visualTone: 'coral',
     date: '2025-01-01',
-    desc: "As a former elementary school teacher, I design and study AI-supported learning environments that foster human-AI interaction and support teaching and learning.",
+    desc: "I design and study AI-supported learning environments that foster human-AI interaction and support teaching and learning.",
     tech: ['AI in education', 'Generative AI', 'Human-AI Interaction', 'Learning Analytics'],
   },
   {
