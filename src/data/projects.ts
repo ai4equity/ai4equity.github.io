@@ -23,7 +23,7 @@ const data: Project[] = [
   },
   {
     title: 'Advancing Equity in Online Learning',
-    subtitle: 'First Year Assistant Professor Grant',
+    subtitle: 'Florida State University',
     image: '/images/projects/equity-online-learning.jpg',
     date: '2025-06-01',
     desc: 'PI role. Examination of an open-source chatbot enhanced by customized datasets and open educational resources. Funded by Florida State University. Total award $20,000.',
