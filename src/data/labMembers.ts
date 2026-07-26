@@ -21,7 +21,7 @@ const data: Project[] = [
     visualTone: 'coral',
     date: '2025-01-01',
     desc: "As a former elementary school teacher, I design and study AI-supported learning environments that foster human-AI interaction and support teaching and learning.",
-    tech: ['AI in education', 'Generative AI for Learning', 'Human-AI Interaction', 'Learning Analytics'],
+    tech: ['AI in education', 'Generative AI', 'Human-AI Interaction', 'Learning Analytics'],
   },
   {
     title: 'Jueun Shin, MA',
@@ -29,7 +29,7 @@ const data: Project[] = [
     visualTone: 'gold',
     date: '2025-01-01',
     desc: "I'm interested in designing pedagogy-based educational GenAI to maximize learning effects, including critical thinking skills.",
-    tech: ['Instructional Design', 'Learner Agency', 'Generative AI for Learning', 'Learning Analytics'],
+    tech: ['Instructional Design', 'Learner Agency', 'Generative AI', 'Learning Analytics'],
   },
   /*
   {
