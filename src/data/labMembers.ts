@@ -31,16 +31,14 @@ const data: Project[] = [
     desc: "I'm interested in designing pedagogy-based educational GenAI to maximize learning effects, including critical thinking skills.",
     tech: ['Instructional Design', 'Learner Agency', 'Generative AI', 'Learning Analytics'],
   },
-  /*
   {
-    title: 'Student C',
-    subtitle: 'PhD Student',
+    title: 'Sitong Zhou, MA,
+    subtitle: 'PhD Student | sz26@fsu.edu',
     visualTone: 'violet',
     date: '2026-01-01',
-    desc: 'Placeholder profile for an AI4Equity Lab member. Research interests and role details can be added later.',
-    tech: ['Online Learning', 'Educational Chatbots', 'Student Support'],
+    desc: 'Coming soon.',
+    tech: ['Language Learning', 'Student Support'],
   },
-  */
 ];
 
 export default data;
