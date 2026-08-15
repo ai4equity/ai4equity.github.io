@@ -21,7 +21,7 @@ export default function Footer() {
             <p className="footer-copyright">
               &copy; {new Date().getFullYear()}
             </p>
-            <p className="footer-updated">Last update: June 13, 2026</p>
+            <p className="footer-updated">Last update: August 15, 2026</p>
           </div>
         </div>
 
