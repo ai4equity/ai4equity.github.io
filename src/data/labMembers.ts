@@ -21,7 +21,7 @@ const data: Project[] = [
     visualTone: 'coral',
     date: '2025-01-01',
     desc: "I design and study AI-supported learning environments that foster human-AI interaction and support teaching and learning.",
-    tech: ['AI in education', 'Generative AI', 'Human-AI Interaction', 'Learning Analytics'],
+    tech: ['AIED', 'Generative AI', 'Human-AI Interaction', 'Learning Analytics'],
   },
   {
     title: 'Jueun Shin, MA',
