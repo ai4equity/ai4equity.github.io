@@ -36,7 +36,7 @@ const data: Project[] = [
     subtitle: 'PhD Student | sz26@fsu.edu',
     visualTone: 'violet',
     date: '2026-01-01',
-    desc: 'Coming soon.',
+    desc: "Coming soon.",
     tech: ['Language Learning', 'Student Support'],
   },
 ];
