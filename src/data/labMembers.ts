@@ -38,7 +38,7 @@ const data: Project[] = [
     date: '2026-01-01',
     desc: "Coming soon.",
     tech: ['Language Learning', 'Student Support'],
-  },
+  }
 ];
 
 export default data;
