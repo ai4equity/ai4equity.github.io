@@ -32,7 +32,7 @@ const data: Project[] = [
     tech: ['Instructional Design', 'Learner Agency', 'Generative AI', 'Learning Analytics'],
   },
   {
-    title: 'Sitong Zhou, MA,
+    title: 'Sitong Zhou, MA',
     subtitle: 'PhD Student | sz26@fsu.edu',
     visualTone: 'violet',
     date: '2026-01-01',
