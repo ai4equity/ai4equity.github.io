@@ -36,8 +36,8 @@ const data: Project[] = [
     subtitle: 'PhD Student | sz26@fsu.edu',
     visualTone: 'violet',
     date: '2026-01-01',
-    desc: "Coming soon.",
-    tech: ['Language Learning', 'Student Support'],
+    desc: "I hope to explore how gamification and AI-supported learning environments can support engaging and meaningful teaching and learning experiences.",
+    tech: ['Gamification', 'AI-Supported Learning', 'Instructional Design', 'learning analytics'],
   }
 ];
 
