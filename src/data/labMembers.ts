@@ -37,7 +37,7 @@ const data: Project[] = [
     visualTone: 'violet',
     date: '2026-01-01',
     desc: "I hope to explore how gamification and AI-supported learning environments can support engaging and meaningful teaching and learning experiences.",
-    tech: ['Gamification', 'AI-Supported Learning', 'Instructional Design', 'learning analytics'],
+    tech: ['Gamification', 'AI-Supported Learning', 'Instructional Design', 'Learning Analytics'],
   }
 ];
 
