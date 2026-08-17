@@ -20,8 +20,13 @@ const data: Project[] = [
     subtitle: 'PhD Student | jh25@fsu.edu',
     visualTone: 'coral',
     date: '2025-01-01',
-    desc: "I design and study AI-supported learning environments that foster human-AI interaction and support teaching and learning.",
-    tech: ['AIED', 'Generative AI', 'Human-AI Interaction', 'Learning Analytics'],
+    desc: 'I design and study AI-supported learning environments that foster human-AI interaction and support teaching and learning.',
+    tech: [
+      'AIED',
+      'Generative AI',
+      'Human-AI Interaction',
+      'Learning Analytics',
+    ],
   },
   {
     title: 'Jueun Shin, MA',
@@ -29,16 +34,26 @@ const data: Project[] = [
     visualTone: 'gold',
     date: '2025-01-01',
     desc: "I'm interested in designing pedagogy-based educational GenAI to maximize learning effects, including critical thinking skills.",
-    tech: ['Instructional Design', 'Learner Agency', 'Generative AI', 'Learning Analytics'],
+    tech: [
+      'Instructional Design',
+      'Learner Agency',
+      'Generative AI',
+      'Learning Analytics',
+    ],
   },
   {
     title: 'Sitong Zhou, MA',
     subtitle: 'PhD Student | sz26@fsu.edu',
     visualTone: 'violet',
     date: '2026-01-01',
-    desc: "I hope to explore how gamification and AI-supported learning environments can support engaging and meaningful teaching and learning experiences.",
-    tech: ['Gamification', 'AI-Supported Learning', 'Instructional Design', 'Learning Analytics'],
-  }
+    desc: 'I hope to explore how gamification and AI-supported learning environments can support engaging and meaningful teaching and learning experiences.',
+    tech: [
+      'Gamification',
+      'AI-Supported Learning',
+      'Instructional Design',
+      'Learning Analytics',
+    ],
+  },
 ];
 
 export default data;

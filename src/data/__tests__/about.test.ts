@@ -22,8 +22,10 @@ describe('about data', () => {
     expect(aboutMarkdown).toContain('technology use');
     expect(aboutMarkdown).toContain('generative AI');
     expect(aboutMarkdown).toContain('Learning analytics');
-    expect(aboutMarkdown).toContain('Educational chatbots');
-    expect(aboutMarkdown).toContain('Graduate student research mentorship');
+    expect(aboutMarkdown).toContain('educational chatbots');
+    expect(aboutMarkdown).toContain(
+      'sustained collaboration with graduate students',
+    );
   });
 
   it('contains properly formatted headers', () => {

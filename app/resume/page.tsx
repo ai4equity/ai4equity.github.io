@@ -23,7 +23,7 @@ export default function ResumePage() {
       <section className="resume-page">
         <header className="resume-header">
           <h1 className="resume-title">Resume</h1>
-          </header>
+        </header>
 
         <ResumeNav />
 

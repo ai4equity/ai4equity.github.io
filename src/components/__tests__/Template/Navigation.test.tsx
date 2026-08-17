@@ -16,20 +16,23 @@ describe('Navigation', () => {
 
   it('renders the logo link to home', () => {
     render(<Navigation />);
-    const logo = screen.getByRole('link', { name: /md/i });
+    const logo = screen.getByRole('link', { name: /sh/i });
     expect(logo).toHaveAttribute('href', '/');
   });
 
   it('renders navigation links for all non-index routes', () => {
     render(<Navigation />);
 
-    // Should have links for About, Resume, Writing, Stats, Contact, Archive
     expect(screen.getByRole('link', { name: /about/i })).toBeInTheDocument();
     expect(screen.getByRole('link', { name: /resume/i })).toBeInTheDocument();
-    expect(screen.getByRole('link', { name: /archive/i })).toBeInTheDocument();
-    expect(screen.getByRole('link', { name: /writing/i })).toBeInTheDocument();
-    expect(screen.getByRole('link', { name: /stats/i })).toBeInTheDocument();
+    expect(
+      screen.getByRole('link', { name: /publications/i }),
+    ).toBeInTheDocument();
     expect(screen.getByRole('link', { name: /contact/i })).toBeInTheDocument();
+    expect(screen.getByRole('link', { name: /grants/i })).toBeInTheDocument();
+    expect(
+      screen.getByRole('link', { name: /ai4equity lab members/i }),
+    ).toBeInTheDocument();
   });
 
   it('marks home route as active when on homepage', () => {

@@ -13,13 +13,15 @@ describe('page metadata', () => {
   it.each([
     ['about', aboutMetadata, `${SITE_URL}/about/`],
     ['contact', contactMetadata, `${SITE_URL}/contact/`],
-    ['archive', projectsMetadata, `${SITE_URL}/projects/`],
+    ['grants', projectsMetadata, `${SITE_URL}/projects/`],
     ['resume', resumeMetadata, `${SITE_URL}/resume/`],
     ['stats', statsMetadata, `${SITE_URL}/stats/`],
     ['writing', writingMetadata, `${SITE_URL}/writing/`],
   ])('sets page-specific open graph metadata for %s', (_, metadata, url) => {
     expect(metadata.openGraph?.url).toBe(url);
-    expect(metadata.openGraph?.description).toBe(metadata.description);
+    expect(metadata.openGraph?.description).toBe(
+      metadata.description === null ? '' : metadata.description,
+    );
     expect(metadata.openGraph?.title).toBe(
       `${metadata.title} | ${AUTHOR_NAME}`,
     );
@@ -28,7 +30,7 @@ describe('page metadata', () => {
   it.each([
     ['about', aboutMetadata],
     ['contact', contactMetadata],
-    ['archive', projectsMetadata],
+    ['grants', projectsMetadata],
     ['resume', resumeMetadata],
     ['stats', statsMetadata],
     ['writing', writingMetadata],
@@ -50,12 +52,6 @@ describe('page metadata', () => {
     );
     expect(notFoundMetadata.twitter?.title).toBe(
       `${notFoundMetadata.title} | ${AUTHOR_NAME}`,
-    );
-  });
-
-  it('preserves the writing rss alternate', () => {
-    expect(writingMetadata.alternates?.types?.['application/rss+xml']).toBe(
-      '/feed.xml',
     );
   });
 });

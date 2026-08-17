@@ -60,7 +60,7 @@ const skills: Skill[] = [
   {
     title: 'Learning Technologies',
     competency: 4,
-    category: [],
+    category: ['Learning Technologies'],
   },
   {
     title: 'LLM Retrieval-Augmented Generation',

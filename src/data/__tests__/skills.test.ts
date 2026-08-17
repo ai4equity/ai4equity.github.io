@@ -81,12 +81,15 @@ describe('categories data', () => {
     }
   });
 
-  // Data quality: categories should be sorted for filter button display order
-  it('categories are sorted alphabetically by name', () => {
-    const names = categories.map((c) => c.name);
-    const sorted = [...names].sort();
-
-    expect(names).toEqual(sorted);
+  it('categories follow the configured display order', () => {
+    expect(categories.map((c) => c.name)).toEqual([
+      'R&D',
+      'Instructional Design',
+      'Learning Technologies',
+      'Methods',
+      'Research',
+      'Teaching',
+    ]);
   });
 
   it('all skill categories are represented', () => {

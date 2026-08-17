@@ -15,39 +15,17 @@ describe('Hero', () => {
     render(<Hero />);
 
     const heading = screen.getByRole('heading', { level: 1 });
-    expect(heading).toHaveTextContent('Songhee Han, PhD');
+    expect(heading).toHaveTextContent('Songhee Han, Ph.D.');
   });
 
-  it('renders the tagline with FSU and program links', () => {
+  it('renders the current research tagline', () => {
     render(<Hero />);
 
-    const programLink = screen.getByRole('link', {
-      name: /instructional systems/i,
-    });
-    expect(programLink).toHaveAttribute(
-      'href',
-      'https://annescollege.fsu.edu/instructional-systems-and-learning-technologies',
-    );
-    expect(programLink).toHaveAttribute('target', '_blank');
-    expect(programLink).toHaveAttribute('rel', 'noopener noreferrer');
-    expect(programLink).toHaveClass('hero-highlight');
-
-    const fsuLink = screen.getByRole('link', {
-      name: /florida state university/i,
-    });
-    expect(fsuLink).toHaveAttribute('href', 'https://www.fsu.edu/');
-    expect(fsuLink).toHaveAttribute('target', '_blank');
-    expect(fsuLink).toHaveAttribute('rel', 'noopener noreferrer');
-    expect(fsuLink).toHaveClass('hero-highlight');
-  });
-
-  it('displays hero chips for credentials', () => {
-    render(<Hero />);
-
-    expect(screen.getByText('AIED')).toBeInTheDocument();
-    expect(screen.getByText('Learning Analytics')).toBeInTheDocument();
-    expect(screen.getByText('Problem/Game-Based Learning')).toBeInTheDocument();
-    expect(screen.getByText('STEM Education')).toBeInTheDocument();
+    expect(
+      screen.getByText(
+        /Educational researcher and data scientist conducting research on equity-focused learning interventions/i,
+      ),
+    ).toBeInTheDocument();
   });
 
   it('renders CTA buttons with correct links', () => {

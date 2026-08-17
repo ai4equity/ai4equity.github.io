@@ -9,7 +9,7 @@ describe('EmailLink', () => {
 
     expect(screen.getByText('FSU-related matters')).toBeInTheDocument();
     expect(screen.getByText('Non-FSU matters')).toBeInTheDocument();
-    expect(screen.getByText('songheehan')).toBeInTheDocument();
+    expect(screen.getByText('songhee.han')).toBeInTheDocument();
     expect(screen.getByText('@fsu.edu')).toBeInTheDocument();
     expect(screen.getByText('songpublic9')).toBeInTheDocument();
     expect(screen.getByText('@gmail.com')).toBeInTheDocument();
@@ -18,9 +18,9 @@ describe('EmailLink', () => {
   it('renders mailto links', () => {
     render(<EmailLink />);
 
-    expect(screen.getByRole('link', { name: /songheehan/i })).toHaveAttribute(
+    expect(screen.getByRole('link', { name: /songhee\.han/i })).toHaveAttribute(
       'href',
-      'mailto:songheehan@fsu.edu',
+      'mailto:songhee.han@fsu.edu',
     );
     expect(screen.getByRole('link', { name: /songpublic9/i })).toHaveAttribute(
       'href',

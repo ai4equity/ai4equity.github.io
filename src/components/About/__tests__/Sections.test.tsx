@@ -111,10 +111,10 @@ Lead paragraph.
       <AboutContent markdown={aboutMarkdown} />,
     );
 
-    expect(html).toContain('href="#some-history"');
-    expect(html).toContain('id="some-history"');
-    expect(html).toContain('href="#travel-geography"');
-    expect(html).toContain('id="travel-geography"');
+    expect(html).toContain('href="#research-areas"');
+    expect(html).toContain('id="research-areas"');
+    expect(html).toContain('href="#funded-work"');
+    expect(html).toContain('id="funded-work"');
   });
 
   it('supports same-page hash navigation from section links', async () => {
@@ -124,30 +124,30 @@ Lead paragraph.
 
     const nav = screen.getByRole('navigation', { name: 'About sections' });
     const navLink = within(nav).getByRole('link', {
-      name: 'Travel / Geography',
+      name: 'Funded Work',
     });
 
     navLink.click();
 
     await waitFor(() => {
-      expect(window.location.hash).toBe('#travel-geography');
+      expect(window.location.hash).toBe('#funded-work');
     });
     expect(document.querySelector(window.location.hash)).toHaveTextContent(
-      'Travel / Geography',
+      'Funded Work',
     );
 
-    const heading = screen.getByRole('heading', { name: 'Fun Facts' });
+    const heading = screen.getByRole('heading', { name: 'Teaching' });
     const permalink = within(heading).getByRole('link', {
-      name: 'Fun Facts',
+      name: 'Teaching',
     });
 
     permalink.click();
 
     await waitFor(() => {
-      expect(window.location.hash).toBe('#fun-facts');
+      expect(window.location.hash).toBe('#teaching');
     });
     expect(document.querySelector(window.location.hash)).toHaveTextContent(
-      'Fun Facts',
+      'Teaching',
     );
   });
 });

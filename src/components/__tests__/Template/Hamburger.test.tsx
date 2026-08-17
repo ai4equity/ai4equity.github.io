@@ -66,11 +66,16 @@ describe('Hamburger', () => {
     // Open the menu
     fireEvent.click(screen.getByRole('button'));
 
-    // Check for navigation links
     expect(screen.getByRole('link', { name: /about/i })).toBeInTheDocument();
     expect(screen.getByRole('link', { name: /resume/i })).toBeInTheDocument();
-    expect(screen.getByRole('link', { name: /archive/i })).toBeInTheDocument();
+    expect(
+      screen.getByRole('link', { name: /publications/i }),
+    ).toBeInTheDocument();
     expect(screen.getByRole('link', { name: /contact/i })).toBeInTheDocument();
+    expect(screen.getByRole('link', { name: /grants/i })).toBeInTheDocument();
+    expect(
+      screen.getByRole('link', { name: /ai4equity lab members/i }),
+    ).toBeInTheDocument();
   });
 
   it('closes menu when a link is clicked', () => {
