@@ -19,7 +19,13 @@ Maintenance instructions for future revision sessions are in
 - Validation: all 271 tests, formatting, lint, and the production build passed.
   The exported PDF matched the original, with no links in the exported HTML or
   sitemap.
-- **Status: pending deployment**. Public download verification is pending.
+- **Status: deployed and verified**. The public URL returned the PDF with the
+  correct content type and byte-for-byte identical contents. Confirmed the live
+  homepage/navigation and sitemap do not link to it.
+- Direct URL: [AIRiAL 2026 Schedule and Program](https://ai4equity.github.io/files/airial-2026-schedule-and-program.pdf).
+- Release: [PR #7](https://github.com/ai4equity/ai4equity.github.io/pull/7),
+  merge commit `a3ecb38`;
+  [successful deployment](https://github.com/ai4equity/ai4equity.github.io/actions/runs/36585074548).
 
 ### EPA entry formatting on Grants and About
 
