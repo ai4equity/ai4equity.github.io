@@ -9,6 +9,20 @@ Maintenance instructions for future revision sessions are in
 
 ## September 29, 2026
 
+### EPA entry formatting on Grants and About
+
+- Matched the EPA card on Grants to the other cards: title case for the project
+  title, **Co-PI role (Education Lead).** at the start of the description, and
+  **Total award** without a colon.
+- Matched the About page's Funded Work list: project title, role, funder, compact
+  date range (**Jan 2027-Dec 2028**), and award amount. Removed the citation-style
+  author prefix from both entries.
+- Updated `src/data/projects.ts` and `src/data/about.ts`. Preserved the award and
+  cost-share amounts, the EPA illustration, and the two selected tags.
+- Validation: all 271 tests, formatting, lint, and the production build passed.
+  Verified title case, role wording, and field order in both exported pages.
+- **Status: pending deployment**.
+
 ### Footer update date
 
 - Changed the shared footer from **Last update: August 15, 2026** to
