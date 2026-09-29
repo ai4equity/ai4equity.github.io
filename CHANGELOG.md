@@ -21,7 +21,12 @@ Maintenance instructions for future revision sessions are in
   cost-share amounts, the EPA illustration, and the two selected tags.
 - Validation: all 271 tests, formatting, lint, and the production build passed.
   Verified title case, role wording, and field order in both exported pages.
-- **Status: pending deployment**.
+- **Status: deployed and verified**. Confirmed both live entries use the matching
+  title case, role wording, and field order; also checked the award details,
+  image, two tags, and current footer date.
+- Release: [PR #5](https://github.com/ai4equity/ai4equity.github.io/pull/5),
+  merge commit `c0d22a4`;
+  [successful deployment](https://github.com/ai4equity/ai4equity.github.io/actions/runs/36582873243).
 
 ### Footer update date
 
