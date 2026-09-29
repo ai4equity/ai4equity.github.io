@@ -106,7 +106,7 @@ Next.js 16 (App Router) · React 19 · TypeScript · Tailwind CSS v4 · Biome ·
 - **Long-form markdown pages**: Prefer a dedicated renderer component that can parse markdown into semantic sections instead of styling raw headings globally; if `markdown-to-jsx` causes dev/runtime issues in App Router, a `'use client'` boundary may still be required even without hooks. Preserve stable heading ids when converting markdown headings so deep links and `scroll-margin-top` behavior keep working, prefer a shared helper over duplicating slug logic in each page component, and expose those anchors in the UI with section nav or self-links if readers are expected to use them
 - **Blog posts**: Markdown files in `content/writing/` with frontmatter (title, date, description); slug derived from filename
 - **Writing page**: Add external links in `src/data/writing.ts` and keep dated entries sorted newest first; local posts still live in `content/writing/`
-- **Grants**: Keep award details aligned between `src/data/projects.ts` and the Funded Work section in `src/data/about.ts`. Grant cards use topic-specific illustrations in `public/images/projects/`; follow that established visual pattern when adding an entry.
+- **Grants**: Keep award details aligned between `src/data/projects.ts` and the Funded Work section in `src/data/about.ts`. Use title case for project titles. Begin card descriptions with the role (for example, `Co-PI role (Education Lead).`), without a citation-style author prefix. About entries follow the existing order: project title, role, funder, date range, then `Total award` without a colon. Grant cards use topic-specific illustrations in `public/images/projects/`; follow that established visual pattern when adding an entry.
 
 ## Testing
 

@@ -32,7 +32,7 @@ My research also extends to motivation, learning analytics, and problem-based le
 
 # Funded Work
 
-- Han, S. (Co-PI; Education Lead). A national consortium for just-in-time, AI-enhanced, place-based environmental education training. Funded by the U.S. Environmental Protection Agency. January 2027-December 2028. Total award: $4.65M plus $1.66M in cost share.
+- A National Consortium for Just-in-Time, AI-Enhanced, Place-Based Environmental Education Training, Co-PI role (Education Lead), U.S. Environmental Protection Agency, Jan 2027-Dec 2028. Total award $4.65M plus $1.66M in cost share.
 - Bridging the AI Adoption Gap: Teacher-Led Design and Implementation of Generative AI-Supported Mathematics Instruction, PI role, Anne Spencer Daves College of Education, Health, and Human Sciences, Florida State University, Dec 2025-Mar 2027. Total award $25,214.
 - Advancing Equity in Online Learning: Examination of an Open-Source Chatbot Enhanced by Customized Datasets and Open Educational Resources, PI role, First Year Assistant Professor Grant, Florida State University, 2025. Total award $20,000.
 - Large Language Model-Powered Retrieval-Augmented Generation Chatbot and Dashboard Pipelines: Scalable Solutions for Students' Academic Success, PI role, FSU / AWS Funding for Computer Support Seed Fund, 2025-2027. Total award $20,000.
