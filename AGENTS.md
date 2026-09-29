@@ -64,6 +64,33 @@ docs/                 → Documentation
 - If multiple PRs need to land together, open an integration branch PR; do not locally merge into `main`
 - Treat `main` as protected: force-pushes and history rewrites require explicit user approval
 
+## Revision Record (Standing Instruction)
+
+Read [CHANGELOG.md](./CHANGELOG.md) at the start of each website revision task.
+Whenever a revision is completed, maintain that file as part of the task without
+waiting for a separate reminder from the user.
+
+- Use the actual revision date in **America/New_York**, with newest dates first.
+  Group related changes under the same date and preserve earlier entries.
+- Record what changed, the affected pages or files, the relevant validation
+  results, and the actual publication status. Include PR, commit, and deployment
+  links when available. Keep entries concise and useful to the website owner.
+- Distinguish **local only**, **pending deployment**, **deployed and verified**,
+  **blocked**, and **documentation only** as appropriate. Never mark a revision
+  deployed solely because a commit was pushed or a PR was merged.
+- After an authorized deployment, check the GitHub Pages workflow and the
+  affected live page or asset. Update the same entry with the confirmed outcome;
+  if deployment is blocked, record the blocker instead of claiming completion.
+- For a user-visible website revision, update the shared footer's **Last update**
+  date and its existing test to the revision date in the same change. Keep the
+  date fixed to the actual revision; do not make it advance on every page visit.
+  Documentation-only bookkeeping does not change the footer date.
+- Record the revision before the final handoff. A follow-up documentation commit
+  may capture results learned after deployment; it does not need its own new
+  changelog entry. Do not create a recursive chain of entries for log maintenance.
+- Respect the user's requested scope, including requests to keep changes local.
+  Keep credentials and other secrets out of the log.
+
 ## Tech Stack
 
 Next.js 16 (App Router) · React 19 · TypeScript · Tailwind CSS v4 · Biome · Vitest
@@ -79,6 +106,7 @@ Next.js 16 (App Router) · React 19 · TypeScript · Tailwind CSS v4 · Biome ·
 - **Long-form markdown pages**: Prefer a dedicated renderer component that can parse markdown into semantic sections instead of styling raw headings globally; if `markdown-to-jsx` causes dev/runtime issues in App Router, a `'use client'` boundary may still be required even without hooks. Preserve stable heading ids when converting markdown headings so deep links and `scroll-margin-top` behavior keep working, prefer a shared helper over duplicating slug logic in each page component, and expose those anchors in the UI with section nav or self-links if readers are expected to use them
 - **Blog posts**: Markdown files in `content/writing/` with frontmatter (title, date, description); slug derived from filename
 - **Writing page**: Add external links in `src/data/writing.ts` and keep dated entries sorted newest first; local posts still live in `content/writing/`
+- **Grants**: Keep award details aligned between `src/data/projects.ts` and the Funded Work section in `src/data/about.ts`. Grant cards use topic-specific illustrations in `public/images/projects/`; follow that established visual pattern when adding an entry.
 
 ## Testing
 
@@ -93,6 +121,7 @@ npm test -- ComponentName       # Run specific test
 ## Further Reading
 
 - [README.md](./README.md) — Setup and deployment
+- [CHANGELOG.md](./CHANGELOG.md) — Dated website revisions and verified deployment history
 - [docs/adapting-guide.md](./docs/adapting-guide.md) — Guide for forking and customizing
 - [docs/design-goals.md](./docs/design-goals.md) — Architecture principles
 - [docs/contributing.md](./docs/contributing.md) — Contribution guidelines

@@ -7,6 +7,12 @@ https://ai4equity.github.io
 Built from the `mldangelo/personal-site` template with Next.js, React,
 TypeScript, and Tailwind CSS.
 
+## Revision Record
+
+[CHANGELOG.md](./CHANGELOG.md) records website changes, validation, and deployment
+outcomes. [AGENTS.md](./AGENTS.md#revision-record-standing-instruction) contains
+the standing instruction to update that record whenever a revision is completed.
+
 ## Commands
 
 ```bash
