@@ -15,14 +15,10 @@ const data: Project[] = [
     title:
       'A national consortium for just-in-time, AI-enhanced, place-based environmental education training',
     subtitle: 'U.S. Environmental Protection Agency',
-    visualTone: 'teal',
+    image: '/images/projects/epa-environmental-education.jpg',
     date: '2027-01-01',
     desc: 'Han, S. (Co-PI; Education Lead). Funded by the U.S. Environmental Protection Agency. January 2027-December 2028. Total award: $4.65M plus $1.66M in cost share.',
-    tech: [
-      'Environmental Education',
-      'AI-Enhanced Learning',
-      'Place-Based Learning',
-    ],
+    tech: ['Environmental Education', 'AI-Enhanced Learning'],
     featured: true,
   },
   {
