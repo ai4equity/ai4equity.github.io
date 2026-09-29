@@ -9,6 +9,26 @@ Maintenance instructions for future revision sessions are in
 
 ## September 29, 2026
 
+### Session closeout
+
+- **Status: documentation only.** The requested website revisions are complete;
+  their deployment and verification results are recorded below. The user
+  confirmed the PDF opens successfully and finished revisions for now.
+- Hosting capacity checked against
+  [GitHub Pages limits](https://docs.github.com/en/pages/getting-started-with-github-pages/github-pages-limits):
+  the published site is limited to **1 GB**, with a **100 GB/month soft bandwidth
+  limit**. The latest local production export contains 143 files totaling
+  **5,359,088 bytes (about 5.36 MB)**, including the PDF at **705,673 bytes (about
+  0.71 MB)**. At that PDF size, 100 files total about 71 MB and 500 about 353 MB;
+  capacity depends on file size and download traffic. These figures are a
+  September 29 snapshot, not a quota reservation.
+- Future unlisted downloads belong in `public/files/` and require deployment
+  before their direct URLs work. The folder is not a browsable file index, and
+  its contents remain public.
+- The standing instruction in `AGENTS.md` remains in place: update this record
+  after future completed revisions and verify publication before marking work
+  deployed. This documentation update does not change the footer date.
+
 ### Unlisted AIRiAL 2026 schedule and program PDF
 
 - Added the supplied eight-page PDF as
@@ -23,6 +43,11 @@ Maintenance instructions for future revision sessions are in
   correct content type and byte-for-byte identical contents. Confirmed the live
   homepage/navigation and sitemap do not link to it.
 - Direct URL: [AIRiAL 2026 Schedule and Program](https://ai4equity.github.io/files/airial-2026-schedule-and-program.pdf).
+- Follow-up on a reported 404: both the direct URL and a URL with a fresh query
+  string returned HTTP 200 and matched the original PDF. The user confirmed
+  [this link works](https://ai4equity.github.io/files/airial-2026-schedule-and-program.pdf?v=20260929).
+  No server-side failure was reproduced, and no additional website change was
+  needed.
 - Release: [PR #7](https://github.com/ai4equity/ai4equity.github.io/pull/7),
   merge commit `a3ecb38`;
   [successful deployment](https://github.com/ai4equity/ai4equity.github.io/actions/runs/36585074548).
