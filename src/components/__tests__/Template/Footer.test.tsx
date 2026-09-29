@@ -30,7 +30,7 @@ describe('Footer', () => {
       screen.getByText(new RegExp(`© ${currentYear}`)),
     ).toBeInTheDocument();
     expect(
-      screen.getByText('Last update: August 15, 2026'),
+      screen.getByText('Last update: September 29, 2026'),
     ).toBeInTheDocument();
   });
 
