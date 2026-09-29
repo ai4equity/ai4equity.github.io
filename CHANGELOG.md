@@ -9,6 +9,18 @@ Maintenance instructions for future revision sessions are in
 
 ## September 29, 2026
 
+### Unlisted AIRiAL 2026 schedule and program PDF
+
+- Added the supplied eight-page PDF as
+  `public/files/airial-2026-schedule-and-program.pdf` for access by direct URL.
+- Kept it out of website pages, navigation, and the sitemap, as requested.
+  The hosted file is public; unlisted does not mean access-restricted.
+- Confirmed the copied file is byte-for-byte identical to the supplied PDF.
+- Validation: all 271 tests, formatting, lint, and the production build passed.
+  The exported PDF matched the original, with no links in the exported HTML or
+  sitemap.
+- **Status: pending deployment**. Public download verification is pending.
+
 ### EPA entry formatting on Grants and About
 
 - Matched the EPA card on Grants to the other cards: title case for the project

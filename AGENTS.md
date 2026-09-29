@@ -107,6 +107,7 @@ Next.js 16 (App Router) · React 19 · TypeScript · Tailwind CSS v4 · Biome ·
 - **Blog posts**: Markdown files in `content/writing/` with frontmatter (title, date, description); slug derived from filename
 - **Writing page**: Add external links in `src/data/writing.ts` and keep dated entries sorted newest first; local posts still live in `content/writing/`
 - **Grants**: Keep award details aligned between `src/data/projects.ts` and the Funded Work section in `src/data/about.ts`. Use title case for project titles. Begin card descriptions with the role (for example, `Co-PI role (Education Lead).`), without a citation-style author prefix. About entries follow the existing order: project title, role, funder, date range, then `Total award` without a colon. Grant cards use topic-specific illustrations in `public/images/projects/`; follow that established visual pattern when adding an entry.
+- **Unlisted downloads**: When asked to host a file without displaying it on the website, place it in `public/files/` and do not add page, navigation, or sitemap links. Verify the deployed download matches the supplied file and provide its direct URL. These files are publicly accessible, not private.
 
 ## Testing
 
